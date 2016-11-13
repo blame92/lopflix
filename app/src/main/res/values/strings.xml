@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lopflix</string>
+
+    <string name="genero_comedia">Comedy</string>
+    <string name="genero_accion">Action</string>
+    <string name="genero_terror">Horror</string>
+    <string name="genero_infantiles">Animation</string>
+    <string name="trending_movies">Trending Movies</string>
+    <string name="top_movies_2016">Top Rated Movies 2016</string>
+    <string name="highest_grossing_movies_2016">Highest Grossing Movies 2016</string>
+
+</resources>
