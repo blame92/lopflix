@@ -1,7 +1,7 @@
-#Sun Nov 13 14:46:09 ART 2016
-base.0=/Users/santiagoiraola/Desktop/FINAL DIGITALHOUSE/EntregableFinal 01 11 2016/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_95b23b2ef8a18c1fec9b3ab3c0ecc7870173e2b2
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/santiagoiraola/Desktop/FINAL DIGITALHOUSE/EntregableFinal 01 11 2016/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a5899e8e345304d072eec1ab03f2a8de1b2e76c5/classes.dex
-base.1=/Users/santiagoiraola/Desktop/FINAL DIGITALHOUSE/EntregableFinal 01 11 2016/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a5899e8e345304d072eec1ab03f2a8de1b2e76c5
-file.0=/Users/santiagoiraola/Desktop/FINAL DIGITALHOUSE/EntregableFinal 01 11 2016/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_95b23b2ef8a18c1fec9b3ab3c0ecc7870173e2b2/classes.dex
+#Wed Nov 16 18:36:35 ART 2016
+base.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4075ffb42f91ad0c5df91cc87b334017554c233e
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dfa21d977d024d56255b505cc58c86fcb4f6e4b7/classes.dex
+base.1=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dfa21d977d024d56255b505cc58c86fcb4f6e4b7
+file.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4075ffb42f91ad0c5df91cc87b334017554c233e/classes.dex
