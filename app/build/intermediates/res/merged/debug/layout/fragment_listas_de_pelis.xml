@@ -66,6 +66,7 @@
         android:layout_below="@id/listasDePelis_recyclerTopRated"/>
 
     <android.support.v7.widget.RecyclerView
+
         android:id="@+id/listasDePelis_recyclerHighestGrossing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

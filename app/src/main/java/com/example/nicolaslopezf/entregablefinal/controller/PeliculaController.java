@@ -1,20 +1,17 @@
 package com.example.nicolaslopezf.entregablefinal.controller;
 
 import android.content.Context;
-import android.util.Log;
-import android.widget.Toast;
 
 import com.example.nicolaslopezf.entregablefinal.dao.PeliculaDAO;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDBTrailerContainer;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
-import com.example.nicolaslopezf.entregablefinal.model.Trackt.WrapperPeliculaTrckt;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.SerieDB.ContainerSerieDB;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 /**
  * Created by Nicolas Lopez F on 10/22/2016.
@@ -162,33 +159,33 @@ public class PeliculaController {
         PeliculaDAO peliculaDAO = new PeliculaDAO(context);
         String generoID = null;
         switch (genero){
-            case "action" : generoID= TMDBHelper.MOVIE_GENRE_ACTION;
+            case "Action" : generoID= TMDBHelper.MOVIE_GENRE_ACTION;
                 break;
-            case "comedy" : generoID= "35";
+            case "Comedy" : generoID= "35";
                 break;
-            case "horror" : generoID= "27";
+            case "Horror" : generoID= "27";
                 break;
-            case "adventure" : generoID= "12";
+            case "Adventure" : generoID= "12";
                 break;
-            case "animation" : generoID= "16";
+            case "Animation" : generoID= "16";
                 break;
-            case "crime" : generoID= "80";
+            case "Crime" : generoID= "80";
                 break;
-            case "documentary" : generoID= "99";
+            case "Documentary" : generoID= "99";
                 break;
-            case "drama" : generoID= "18";
+            case "Drama" : generoID= "18";
                 break;
-            case "family" : generoID= "10751";
+            case "Family" : generoID= "10751";
                 break;
-            case "history" : generoID= "36";
+            case "History" : generoID= "36";
                 break;
-            case "music" : generoID= "10402";
+            case "Music" : generoID= "10402";
                 break;
-            case "mistery" : generoID= "9648";
+            case "Mistery" : generoID= "9648";
                 break;
-            case "romance" : generoID= "10749";
+            case "Romance" : generoID= "10749";
                 break;
-            case "sci-fi" : generoID= "878";
+            case "Sci-Fi" : generoID= "878";
                 break;
         }
         String url = TMDBHelper.getMoviesByGenre(generoID,1,TMDBHelper.language_ENGLISH);
@@ -219,5 +216,16 @@ public class PeliculaController {
                         listenerFromView.finish(resultado);
                     }
                 },context);
+    }
+    public void obtenerSeriesTMDB(String TMDBurl, Context context, final ResultListener listenerFromView){
+        PeliculaDAO peliculaDAO = new PeliculaDAO(context);
+//        String url = TMDBHelper.getPopularMovies(TMDBHelper.language_ENGLISH, 1);
+        peliculaDAO.flasehadaCreadoraDeAsync(new ContainerSerieDB(), TMDBurl, new ResultListener<Object>() {
+                    @Override
+                    public void finish(Object resultado) {
+                        listenerFromView.finish(resultado);
+                    }
+                }
+                ,context);
     }
 }

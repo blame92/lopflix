@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-#Wed Nov 16 18:36:35 ART 2016
-=======
-#Sun Nov 13 21:27:36 ART 2016
->>>>>>> master
-base.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4075ffb42f91ad0c5df91cc87b334017554c233e
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dfa21d977d024d56255b505cc58c86fcb4f6e4b7/classes.dex
-base.1=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dfa21d977d024d56255b505cc58c86fcb4f6e4b7
-file.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4075ffb42f91ad0c5df91cc87b334017554c233e/classes.dex
+#Thu Nov 17 18:37:02 ART 2016
+base.0=C\:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_9fc09d105571395e6ff4e92cbe90a058682f8832
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_eda172d357da3ceead2b5676e422cf4aea5ad79f\\classes.dex
+base.1=C\:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_eda172d357da3ceead2b5676e422cf4aea5ad79f
+file.0=C\:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_9fc09d105571395e6ff4e92cbe90a058682f8832\\classes.dex

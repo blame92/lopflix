@@ -9,12 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.nicolaslopezf.entregablefinal.R;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.model.Usuario.Usuario;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Nicolas Lopez F on 11/1/2016.

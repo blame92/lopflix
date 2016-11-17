@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.nicolaslopezf.entregablefinal.R;
@@ -37,8 +38,22 @@ public class FragmentRecyclerSoloImagen extends Fragment{
     private PeliculaController peliculaController;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        String genero = "Comedy";
+
+
+
+        try{
+            Bundle bundle = getArguments();
+            genero = bundle.getString("genero");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
 
         View unaVistaADevolver = inflater.inflate(R.layout.fragment_listas_de_pelis, container, false);
 
@@ -81,15 +96,18 @@ public class FragmentRecyclerSoloImagen extends Fragment{
         unAdapterPeliculasTopRated.setListener(new ListenerPeliculasSoloImagen(recyclerViewPeliculasTopRated, unAdapterPeliculasTopRated));
 
 
-        peliculaController.obtenerListaDePeliculasTMDB(TMDBHelper.getBestMoviesOfSpecificYear(TMDBHelper.language_ENGLISH,"2016",1),getActivity(), new ResultListener() {
-            @Override
-            public void finish(Object resultado) {
-                ContainerMovieDB peliculasLatest = (ContainerMovieDB) resultado;
+            TextView textView = (TextView) unaVistaADevolver.findViewById(R.id.listasDePelis_textoTopRated);
+            textView.setText("Recomended " + genero + " movies 2016");
+            peliculaController.obtenerPeliculasPorGenero(genero, getActivity(), new ResultListener() {
+                @Override
+                public void finish(Object resultado) {
+                    ContainerMovieDB peliculasLatest = (ContainerMovieDB) resultado;
 
-                unAdapterPeliculasTopRated.setListaDePeliculas(peliculasLatest.getResult());
-                unAdapterPeliculasTopRated.notifyDataSetChanged();
-            }
-        });
+                    unAdapterPeliculasTopRated.setListaDePeliculas(peliculasLatest.getResult());
+                    unAdapterPeliculasTopRated.notifyDataSetChanged();
+                }
+            });
+
 
 
         recyclerViewPeliculasTopRated.setAdapter(unAdapterPeliculasTopRated);

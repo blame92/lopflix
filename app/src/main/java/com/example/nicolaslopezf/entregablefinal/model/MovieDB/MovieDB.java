@@ -1,6 +1,6 @@
 package com.example.nicolaslopezf.entregablefinal.model.MovieDB;
 
-import com.example.nicolaslopezf.entregablefinal.model.PeliculaPadre;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.PeliculaPadre;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;

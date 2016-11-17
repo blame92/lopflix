@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.nicolaslopezf.entregablefinal.view.YouTube.YouTubeFragment;
+import com.example.nicolaslopezf.entregablefinal.view.viewsParaSeries.FragmentRecycleSeries;
 import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.FragmentRecyclerSoloImagen;
 
 import java.util.ArrayList;
@@ -24,7 +25,9 @@ public class AdapterViewPager extends FragmentStatePagerAdapter {
     public AdapterViewPager(FragmentManager fm) {
         super(fm);
         ArrayList<Fragment> fragments = new ArrayList<>();
+        FragmentRecyclerSoloImagen fragmentRecyclerSoloImagen = new FragmentRecyclerSoloImagen();
         fragments.add(new FragmentRecyclerSoloImagen());
+        fragments.add(new FragmentRecycleSeries());
         fragments.add(new FragmentRecycleGridFavoritas());
         fragments.add(new FragmentRecyclerUsuario());
 
@@ -51,11 +54,22 @@ public class AdapterViewPager extends FragmentStatePagerAdapter {
                 tabTitle = "Peliculas";
                 break;
             case 1:
-                tabTitle = "Favoritos";
+                tabTitle = "Series";
                 break;
             case 2:
+                tabTitle = "Favoritos";
+                break;
+            case 3:
                 tabTitle = "Amigos";
         }
         return tabTitle;
+    }
+
+    public ArrayList<Fragment> getFragmentsDelAdapter() {
+        return fragmentsDelAdapter;
+    }
+
+    public void setFragmentsDelAdapter(ArrayList<Fragment> fragmentsDelAdapter) {
+        this.fragmentsDelAdapter = fragmentsDelAdapter;
     }
 }

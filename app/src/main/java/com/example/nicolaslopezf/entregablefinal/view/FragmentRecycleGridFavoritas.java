@@ -9,15 +9,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
-import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
-import com.example.nicolaslopezf.entregablefinal.model.PeliculaPadre;
-import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.AdapterRecyclerSoloImagen;
-import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.FragmentRecyclerSoloImagen;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 
 import java.util.ArrayList;
 

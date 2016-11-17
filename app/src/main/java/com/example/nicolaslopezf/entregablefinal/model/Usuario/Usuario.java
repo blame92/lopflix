@@ -1,6 +1,6 @@
 package com.example.nicolaslopezf.entregablefinal.model.Usuario;
 
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 
 import java.util.ArrayList;
 

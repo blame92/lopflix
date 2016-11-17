@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 
 import java.util.ArrayList;
 

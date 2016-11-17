@@ -9,9 +9,7 @@ import android.widget.ImageView;
 
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
-import com.example.nicolaslopezf.entregablefinal.view.AdapterRecyclerPeliculas;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

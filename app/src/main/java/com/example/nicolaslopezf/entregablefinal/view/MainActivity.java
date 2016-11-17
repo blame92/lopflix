@@ -2,7 +2,6 @@ package com.example.nicolaslopezf.entregablefinal.view;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
@@ -14,17 +13,25 @@ import android.widget.Toast;
 
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
-import com.example.nicolaslopezf.entregablefinal.dao.PeliculaDAO;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
-import com.example.nicolaslopezf.entregablefinal.model.Trackt.WrapperPeliculaTrckt;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.FragmentRecyclerSoloImagen;
 
-import java.util.ArrayList;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity implements FragmentRecyclerSoloImagen.ComunicadorFragmentActivity,FragmentRecycleGridFavoritas.ComunicadorFavoritosActivity {
+
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "o0AwMxuktney6F0OxNZXhup35";
+    private static final String TWITTER_SECRET = "bkItOFtZmpTPmBDWP3zEylH2iYeOUL1eLy6a3AVaV444eXra0w";
+
+
 
     DrawerLayout drawerLayout;
     private FragmentManager unFragmentManager;
@@ -41,7 +48,10 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
             }
         });
 
+
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
 
         FragmentViewPager fragmentViewPager = new FragmentViewPager();
@@ -61,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
 
+
     }
 
 
@@ -71,14 +82,15 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
 
             Toast.makeText(MainActivity.this, item.toString(), Toast.LENGTH_SHORT).show();
             unFragmentManager = getSupportFragmentManager();
-
-            FragmentRecyclerPeliculas unFragmentRecyclerPeliculas = new FragmentRecyclerPeliculas();
+            FragmentViewPager fragmentViewPager = new FragmentViewPager();
+            FragmentRecyclerSoloImagen fragmentRecyclerSoloImagen = new FragmentRecyclerSoloImagen();
+            Bundle bundle = new Bundle();
+            bundle.putString("genero", item.toString());
+            fragmentRecyclerSoloImagen.setArguments(bundle);
 
             FragmentTransaction unaTransaction = unFragmentManager.beginTransaction();
-            unaTransaction.replace(R.id.acaVaElFragmentPelicula, unFragmentRecyclerPeliculas);
-            Bundle unBundle = new Bundle();
-            unBundle.putString("genero",item.toString());
-            unFragmentRecyclerPeliculas.setArguments(unBundle);
+            unaTransaction.replace(R.id.acaVaElFragmentPelicula, fragmentRecyclerSoloImagen).addToBackStack(null);
+
 
             unaTransaction.commit();
 

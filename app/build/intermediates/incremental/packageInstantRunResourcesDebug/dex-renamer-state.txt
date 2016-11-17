@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-#Wed Nov 16 18:36:27 ART 2016
-=======
-#Sun Nov 13 20:55:54 ART 2016
->>>>>>> master
+#Thu Nov 17 17:19:58 ART 2016

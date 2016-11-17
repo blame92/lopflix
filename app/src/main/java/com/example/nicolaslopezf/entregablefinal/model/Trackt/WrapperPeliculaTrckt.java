@@ -1,6 +1,5 @@
 package com.example.nicolaslopezf.entregablefinal.model.Trackt;
 
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;

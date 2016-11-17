@@ -18,6 +18,7 @@ import com.example.nicolaslopezf.entregablefinal.R;
 public class FragmentViewPager extends Fragment {
 
     private ViewPager viewPager;
+    private AdapterViewPager adapterViewPager;
 
 
     @Nullable
@@ -32,7 +33,7 @@ public class FragmentViewPager extends Fragment {
 
         tabLayout.setupWithViewPager(viewPager);
 
-        AdapterViewPager adapterViewPager = new AdapterViewPager(getActivity().getSupportFragmentManager());
+        adapterViewPager = new AdapterViewPager(getActivity().getSupportFragmentManager());
 
         viewPager.setAdapter(adapterViewPager);
 
@@ -43,5 +44,13 @@ public class FragmentViewPager extends Fragment {
     public void onResume() {
         viewPager.setAdapter(new AdapterViewPager(getActivity().getSupportFragmentManager()));
         super.onResume();
+    }
+
+    public AdapterViewPager getAdapterViewPager() {
+        return adapterViewPager;
+    }
+
+    public void setAdapterViewPager(AdapterViewPager adapterViewPager) {
+        this.adapterViewPager = adapterViewPager;
     }
 }

@@ -2,7 +2,6 @@ package com.example.nicolaslopezf.entregablefinal.view;
 
 import android.content.res.ColorStateList;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -24,17 +23,13 @@ import com.example.nicolaslopezf.entregablefinal.dao.PeliculaDAO;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDBTrailerContainer;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
 import com.example.nicolaslopezf.entregablefinal.view.YouTube.YouTubeFragment;
 import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.AdapterRecyclerSoloImagen;
 import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.FragmentRecyclerSoloImagen;
 import com.squareup.picasso.Picasso;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
 
 /**
  * Created by mora on 24/10/2016.
@@ -74,6 +69,7 @@ public class FragmentPeliculaDetallada extends Fragment {
 
 
         final String imdbID = bundleRecibido.getString("imdbID");
+
         final String tmdbID = bundleRecibido.getString("tmdbID");
 
         // toDo cambiar para que lo haga el controller

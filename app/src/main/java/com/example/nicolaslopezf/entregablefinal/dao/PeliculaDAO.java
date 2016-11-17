@@ -8,12 +8,17 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.AsyncTask;
 
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.ContainerPeliculaFireBase;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.model.Trackt.WrapperPeliculaTrckt;
-import com.example.nicolaslopezf.entregablefinal.model.WrapperPeliculas;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.WrapperPeliculas;
 import com.example.nicolaslopezf.entregablefinal.utils.HTTPConnectionManager;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
-import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -388,6 +393,38 @@ public class PeliculaDAO extends SQLiteOpenHelper{
             listenerController.finish(wrapperPeliculaTrckt);
         }
     }
+
+    public ContainerPeliculaFireBase readFavoritesFromFirebase(){
+        FirebaseDatabase mDatabase;
+        mDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = mDatabase.getReference();
+
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ContainerPeliculaFireBase containerPeliculaFireBase = dataSnapshot.getValue(ContainerPeliculaFireBase.class);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        //return containerPeliculaFireBase;
+        return null;
+
+    }
+
+    public void AddToFirebaseFavorites(Pelicula pelicula){
+        FirebaseDatabase mDatabase;
+        mDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = mDatabase.getReference();
+
+    }
+
 
 
 

@@ -8,5 +8,7 @@
     <string name="trending_movies">Trending Movies</string>
     <string name="top_movies_2016">Top Rated Movies 2016</string>
     <string name="highest_grossing_movies_2016">Highest Grossing Movies 2016</string>
+    <string name="facebook_app_id">1801328460085640</string>
+
 
 </resources>

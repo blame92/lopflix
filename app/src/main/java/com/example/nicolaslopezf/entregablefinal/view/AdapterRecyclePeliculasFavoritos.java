@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.nicolaslopezf.entregablefinal.R;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
