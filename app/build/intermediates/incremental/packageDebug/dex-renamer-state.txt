@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Wed Nov 16 18:36:35 ART 2016
+=======
+#Sun Nov 13 21:27:36 ART 2016
+>>>>>>> master
 base.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4075ffb42f91ad0c5df91cc87b334017554c233e
 renamed.1=classes2.dex
 renamed.0=classes.dex

@@ -1,8 +1,15 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Wed Nov 16 18:36:27 ART 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_bottom_sheet_dialog.xml
+=======
+#Sun Nov 13 20:55:54 ART 2016
+210.set=ANDROID_RESOURCE
+14.set=ANDROID_RESOURCE
+180.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/abc_tint_seek_thumb.xml
+>>>>>>> master
 118.set=ANDROID_RESOURCE
 60.set=ANDROID_RESOURCE
 2.set=ANDROID_RESOURCE
@@ -30,11 +37,19 @@
 65.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
 61.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 217.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/mipmap-mdpi-v4/ic_favorite_full.png
+<<<<<<< HEAD
 40.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_navigation_item_header.xml
 186.set=ANDROID_RESOURCE
 115.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
 49.set=ANDROID_RESOURCE
 92.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_clear_material.xml
+=======
+40.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_seekbar_track_material.xml
+186.set=ANDROID_RESOURCE
+115.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+49.set=ANDROID_RESOURCE
+92.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+>>>>>>> master
 167.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/support_simple_spinner_dropdown_item.xml
 198.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 121.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -47,7 +62,11 @@
 193.set=ANDROID_RESOURCE
 56.set=ANDROID_RESOURCE
 19.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 15.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_favorite_full.png
+=======
+15.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_ratingbar_indicator_material.xml
+>>>>>>> master
 46.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 213.set=ANDROID_RESOURCE
 98.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -56,12 +75,20 @@
 73.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 229.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ratingbar_indicator_material.xml
 225.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 204.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_popup_exit.xml
+=======
+204.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_vector_test.xml
+>>>>>>> master
 127.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_fade_out.xml
 63.set=ANDROID_RESOURCE
 6.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 5.set=ANDROID_RESOURCE
+<<<<<<< HEAD
 179.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/abc_tint_seek_thumb.xml
+=======
+179.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_bottom_sheet_dialog.xml
+>>>>>>> master
 102.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
 154.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png
 167.set=ANDROID_RESOURCE
@@ -93,7 +120,11 @@
 10.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 66.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_navigation_menu.xml
 218.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+<<<<<<< HEAD
 41.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_seekbar_track_material.xml
+=======
+41.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_navigation_item_header.xml
+>>>>>>> master
 196.set=ANDROID_RESOURCE
 116.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
 93.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_default.xml
@@ -124,7 +155,11 @@
 7.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 103.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/glass_background_nav_view.jpg
 155.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_template_lines.xml
+<<<<<<< HEAD
 130.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/abc_screen_toolbar.xml
+=======
+130.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/fragment_pelicula_item.xml
+>>>>>>> master
 171.set=ANDROID_RESOURCE
 34.set=ANDROID_RESOURCE
 182.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_list_selector_background_transition_holo_dark.xml
@@ -177,8 +212,13 @@
 75.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 227.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 50.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 206.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_popup_enter.xml
 129.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/fragment_pelicula_item.xml
+=======
+206.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png
+129.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/abc_screen_toolbar.xml
+>>>>>>> master
 83.set=ANDROID_RESOURCE
 8.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 104.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_text_input_password_icon.xml
@@ -238,7 +278,11 @@
 47.set=ANDROID_RESOURCE
 76.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 51.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 207.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png
+=======
+207.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_popup_enter.xml
+>>>>>>> master
 93.set=ANDROID_RESOURCE
 204.set=ANDROID_RESOURCE
 9.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -275,11 +319,19 @@
 13.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 69.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_switch_track.xml
 44.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_favorite.png
+<<<<<<< HEAD
 119.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png
 96.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_alert_dialog_button_bar_material.xml
 89.set=ANDROID_RESOURCE
 202.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 71.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_cab_background_top_material.xml
+=======
+119.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+96.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_alert_dialog_button_bar_material.xml
+89.set=ANDROID_RESOURCE
+202.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+71.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/select_dialog_item_material.xml
+>>>>>>> master
 125.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 223.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
 146.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view.xml
@@ -327,7 +379,11 @@
 136.set=ANDROID_RESOURCE
 141.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 197.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_alert_dialog_material.xml
+<<<<<<< HEAD
 120.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+=======
+120.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png
+>>>>>>> master
 172.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
 39.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 143.set=ANDROID_RESOURCE
@@ -374,7 +430,11 @@
 139.set=ANDROID_RESOURCE
 81.set=ANDROID_RESOURCE
 59.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/menu/navigation_view_menu.xml
+<<<<<<< HEAD
 34.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_dialog_title_material.xml
+=======
+34.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v11/abc_background_cache_hint_selector_material_light.xml
+>>>>>>> master
 65.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 217.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 86.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/abc_secondary_text_material_dark.xml
@@ -387,7 +447,11 @@
 146.set=ANDROID_RESOURCE
 142.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 198.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_expanded_menu_layout.xml
+<<<<<<< HEAD
 121.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml
+=======
+121.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/switch_thumb_material_dark.xml
+>>>>>>> master
 0.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 173.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_disable_only_material_light.xml
 107.set=ANDROID_RESOURCE
@@ -401,7 +465,11 @@
 98.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/lopo_icon_two.png
 21.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/assets/debug/Frozen.json
 204.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 73.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/select_dialog_item_material.xml
+=======
+73.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_cab_background_top_material.xml
+>>>>>>> master
 127.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 225.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/design_bottom_sheet_slide_in.xml
 179.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -433,7 +501,11 @@ count=230
 149.set=ANDROID_RESOURCE
 91.set=ANDROID_RESOURCE
 202.set=ANDROID_RESOURCE
+<<<<<<< HEAD
 35.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v11/abc_background_cache_hint_selector_material_light.xml
+=======
+35.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_dialog_title_material.xml
+>>>>>>> master
 66.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 218.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 87.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/navigation_empty_icon.xml
@@ -448,7 +520,11 @@ count=230
 220.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 199.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/design_ic_visibility.xml
+<<<<<<< HEAD
 122.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/switch_thumb_material_dark.xml
+=======
+122.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml
+>>>>>>> master
 13.set=ANDROID_RESOURCE
 1.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 174.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_ratingbar_material.xml
@@ -460,11 +536,19 @@ count=230
 47.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_radio_material.xml
 22.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_layout_tab_text.xml
 124.set=ANDROID_RESOURCE
+<<<<<<< HEAD
 99.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png
 205.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 74.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_media_cancel_action.xml
 128.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 226.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png
+=======
+99.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_grow_fade_in_from_bottom.xml
+205.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+74.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_media_cancel_action.xml
+128.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+226.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
+>>>>>>> master
 103.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 155.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 7.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_toolbar.xml
@@ -523,7 +607,11 @@ count=230
 206.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 75.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/design_error.xml
 129.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 227.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
+=======
+227.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png
+>>>>>>> master
 50.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_navigation_item_subheader.xml
 104.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 156.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -546,7 +634,11 @@ count=230
 137.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout-sw600dp-v13/design_layout_snackbar.xml
 215.set=ANDROID_RESOURCE
 189.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/assets/debug/Peliculas.json
+<<<<<<< HEAD
 112.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_menu_item_action_area.xml
+=======
+112.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_up_container.xml
+>>>>>>> master
 19.set=ANDROID_RESOURCE
 164.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_btn_checkable.xml
 195.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -559,7 +651,11 @@ count=230
 26.set=ANDROID_RESOURCE
 37.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/fragment_view_pager.xml
 68.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 89.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+=======
+89.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_search_dropdown_item_icons_2line.xml
+>>>>>>> master
 12.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/switch_thumb_material_light.xml
 43.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 72.set=ANDROID_RESOURCE
@@ -571,10 +667,17 @@ count=230
 145.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 170.set=ANDROID_RESOURCE
 201.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+<<<<<<< HEAD
 124.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_spinner_textfield_background_material.xml
 33.set=ANDROID_RESOURCE
 3.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 176.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_switch_thumb.xml
+=======
+124.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim-v21/design_bottom_sheet_slide_out.xml
+33.set=ANDROID_RESOURCE
+3.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+176.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+>>>>>>> master
 151.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/resources.arsc
 137.set=ANDROID_RESOURCE
 40.set=ANDROID_RESOURCE
@@ -582,7 +685,11 @@ count=230
 24.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png
 144.set=ANDROID_RESOURCE
 207.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 76.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png
+=======
+76.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_search_api_material.xml
+>>>>>>> master
 51.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_check_material.xml
 105.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 9.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_layout_tab_icon.xml
@@ -598,6 +705,7 @@ count=230
 32.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 68.set=ANDROID_RESOURCE
 84.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 63.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_light.png
 215.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ratingbar_material.xml
 138.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_mode_close_item_material.xml
@@ -605,6 +713,15 @@ count=230
 113.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_up_container.xml
 29.set=ANDROID_RESOURCE
 90.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_search_dropdown_item_icons_2line.xml
+=======
+63.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/design_tint_password_toggle.xml
+215.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ratingbar_material.xml
+138.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_mode_close_item_material.xml
+225.set=ANDROID_RESOURCE
+113.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_menu_item_action_area.xml
+29.set=ANDROID_RESOURCE
+90.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+>>>>>>> master
 165.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png
 196.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 140.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
@@ -625,11 +742,19 @@ count=230
 146.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 180.set=ANDROID_RESOURCE
 202.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_edittext.xml
+<<<<<<< HEAD
 125.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim-v21/design_bottom_sheet_slide_out.xml
 43.set=ANDROID_RESOURCE
 4.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 177.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
 100.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_grow_fade_in_from_bottom.xml
+=======
+125.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_spinner_textfield_background_material.xml
+43.set=ANDROID_RESOURCE
+4.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+177.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_switch_thumb.xml
+100.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png
+>>>>>>> master
 147.set=ANDROID_RESOURCE
 152.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/design_snackbar_in.xml
 200.set=ANDROID_RESOURCE
@@ -638,7 +763,11 @@ count=230
 25.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_icon.xml
 154.set=ANDROID_RESOURCE
 208.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 77.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_search_api_material.xml
+=======
+77.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png
+>>>>>>> master
 11.set=ANDROID_RESOURCE
 52.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_ab_back_material.xml
 106.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -655,14 +784,22 @@ count=230
 33.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 78.set=ANDROID_RESOURCE
 85.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
+<<<<<<< HEAD
 64.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/color/design_tint_password_toggle.xml
+=======
+64.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_light.png
+>>>>>>> master
 60.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 216.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/design_layout_snackbar.xml
 139.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/navigationview_header.xml
 176.set=ANDROID_RESOURCE
 114.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxhdpi-v4/ic_favorite.png
 39.set=ANDROID_RESOURCE
+<<<<<<< HEAD
 91.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+=======
+91.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_clear_material.xml
+>>>>>>> master
 166.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_checkbox.xml
 197.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 120.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
@@ -673,7 +810,11 @@ count=230
 46.set=ANDROID_RESOURCE
 18.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 39.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/design_fab_in.xml
+<<<<<<< HEAD
 14.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_ratingbar_indicator_material.xml
+=======
+14.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_favorite_full.png
+>>>>>>> master
 45.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 92.set=ANDROID_RESOURCE
 203.set=ANDROID_RESOURCE
@@ -683,7 +824,11 @@ count=230
 228.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/design_snackbar_background.xml
 224.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_
 190.set=ANDROID_RESOURCE
+<<<<<<< HEAD
 203.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_vector_test.xml
+=======
+203.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_popup_exit.xml
+>>>>>>> master
 126.file=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_select_dialog_material.xml
 53.set=ANDROID_RESOURCE
 5.base=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/res/resources-debug.ap_

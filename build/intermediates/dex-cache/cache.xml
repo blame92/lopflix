@@ -79,7 +79,11 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
+<<<<<<< HEAD
         sha1="f1d27aee7ba5e40fe97e0eff7e4841264f42f024">
+=======
+        sha1="1a3c09ef54477e04339f9e1e8ccd2be5cbab905f">
+>>>>>>> master
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4075ffb42f91ad0c5df91cc87b334017554c233e/classes.dex" />
     </item>
     <item
@@ -97,7 +101,11 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
+<<<<<<< HEAD
         sha1="ce0472fe561de53f73669cce923af4f0d9d9631a">
+=======
+        sha1="7d88282a82d5cddecd2e213f5b19cbce9b6abc44">
+>>>>>>> master
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/lopflix/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dfa21d977d024d56255b505cc58c86fcb4f6e4b7/classes.dex" />
     </item>
     <item
