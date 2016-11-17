@@ -232,4 +232,8 @@ public class ActivityLogin  extends AppCompatActivity {
                     }
                 });
     }
+    public void loginAsGuest(View view){
+        Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+        startActivity(intent);
+    }
 }
