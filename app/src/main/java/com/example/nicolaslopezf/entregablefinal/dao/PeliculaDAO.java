@@ -14,11 +14,14 @@ import com.example.nicolaslopezf.entregablefinal.model.Trackt.WrapperPeliculaTrc
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.WrapperPeliculas;
 import com.example.nicolaslopezf.entregablefinal.utils.HTTPConnectionManager;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
+import com.google.firebase.auth.UserInfo;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -418,10 +421,12 @@ public class PeliculaDAO extends SQLiteOpenHelper{
 
     }
 
-    public void AddToFirebaseFavorites(Pelicula pelicula){
+    public void AddUserToFirebase(UserInfo user){
         FirebaseDatabase mDatabase;
         mDatabase = FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = mDatabase.getReference();
+        databaseReference.child("usuarios").child("usuarioTest").setValue(user);
+        }
 
     }
 
@@ -429,5 +434,3 @@ public class PeliculaDAO extends SQLiteOpenHelper{
 
 
 
-
-}

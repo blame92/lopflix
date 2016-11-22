@@ -29,7 +29,7 @@ public class AdapterViewPager extends FragmentStatePagerAdapter {
         fragments.add(new FragmentRecyclerSoloImagen());
         fragments.add(new FragmentRecycleSeries());
         fragments.add(new FragmentRecycleGridFavoritas());
-        fragments.add(new FragmentRecyclerUsuario());
+//        fragments.add(new FragmentRecyclerUsuario());
 
         this.fragmentsDelAdapter = fragments;
     }

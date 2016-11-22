@@ -1,19 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_favorite_full.png",
-        "source": "C:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\src\\main\\res\\mipmap-hdpi\\ic_favorite_full.png"
-    },
-    {
-        "merged": "C:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "C:\\loflixOficial\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_favorite.png",
-        "source": "C:\\Users\\Nicolas Lopez F\\lopflix-1\\app\\src\\main\\res\\mipmap-hdpi\\ic_favorite.png"
     },
     {
         "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_favorite.png",

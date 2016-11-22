@@ -13,6 +13,13 @@ import android.view.ViewGroup;
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.WrapperPeliculas;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -40,7 +47,38 @@ public class FragmentRecycleGridFavoritas extends Fragment {
 
 
         unAdapterPelicula = new AdapterRecyclePeliculasFavoritos(getActivity());
-        unAdapterPelicula.setListaDePeliculas(peliculasDelRecycle);
+
+        final ArrayList<Pelicula> peliculas = new ArrayList<>();
+        unAdapterPelicula.setListaDePeliculas(peliculas);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseAuth mAuth  = FirebaseAuth.getInstance();
+        FirebaseUser usuarioLogeado = mAuth.getCurrentUser();
+        database.getReference("users").child(usuarioLogeado.getUid()).child("watchlist").addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        //ArrayList<Pelicula> peliculas = new ArrayList<>();
+                        for(DataSnapshot userDataSnapshot : dataSnapshot.getChildren()){
+                            Pelicula pelicula = userDataSnapshot.getValue(Pelicula.class);
+                            peliculas.add(pelicula);
+                            unAdapterPelicula.notifyDataSetChanged();
+                        }
+
+
+
+                    }
+
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
+                    }
+                });
+
+
+
+        //unAdapterPelicula.setListaDePeliculas(peliculasDelRecycle);
         unAdapterPelicula.setListener(new ListenerPeliculasSoloImagen(recyclerViewPeliculas,unAdapterPelicula));
         recyclerViewPeliculas.setAdapter(unAdapterPelicula);
 

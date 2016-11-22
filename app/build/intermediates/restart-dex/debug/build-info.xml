@@ -5,46 +5,32 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="80186744482177"
-    token="-3637368099044024298"
-    verifier="COMPATIBLE" >
+    timestamp="510586716367236"
+    token="-1653956766172365964"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="352" />
+        duration="429" />
     <task
         name="instant-run-dex"
-        duration="15" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="52" />
+        duration="43" />
     <task
         name="verifier"
-        duration="3" />
+        duration="5" />
 
     <artifact
-        location="C:\Users\Nicolas Lopez F\lopflix-1\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="79906125622814"
+        timestamp="510586716367236"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Nicolas Lopez F\lopflix-1\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
-    </build>
-    <build
-        timestamp="80058669634631"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Nicolas Lopez F\lopflix-1\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="629569103483218"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\Nicolas Lopez F\lopflix-1\app\build\outputs\apk\app-debug.apk"
+            location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

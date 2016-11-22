@@ -378,7 +378,7 @@ public final class R {
 		public static final int tw__not_now_btn_txt = 0x7f070044;
 		public static final int tw__pause = 0x7f070045;
 		public static final int tw__play = 0x7f070046;
-		public static final int tw__play_store = 0x7f07007c;
+		public static final int tw__play_store = 0x7f07007d;
 		public static final int tw__post_tweet = 0x7f070047;
 		public static final int tw__relative_date_format_long = 0x7f070048;
 		public static final int tw__relative_date_format_short = 0x7f070049;

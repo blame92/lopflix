@@ -126,7 +126,7 @@ public final class R {
 		public static final int tw__login_btn_txt = 0x7f070042;
 		public static final int tw__max_tweet_chars = 0x7f070043;
 		public static final int tw__not_now_btn_txt = 0x7f070044;
-		public static final int tw__play_store = 0x7f07007c;
+		public static final int tw__play_store = 0x7f07007d;
 		public static final int tw__post_tweet = 0x7f070047;
 		public static final int tw__share_email_desc = 0x7f07004d;
 		public static final int tw__share_email_title = 0x7f07004e;

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
@@ -51,13 +52,21 @@ public class FragmentRecycleSeries extends Fragment {
 
         //-------------------------COMIENZO DE RECYCLER PARA TRENDING----------------------------------//
 
+        TextView textViewAiringToday = (TextView) unaVistaADevolver.findViewById(R.id.listasDePelis_textoHighestGrossing);
+        textViewAiringToday.setText("AiringToday");
+
         recyclerViewSeries1 = (RecyclerView) unaVistaADevolver.findViewById(R.id.listasDePelis_recyclerTrending);
         LinearLayoutManager linearLayoutManagerTrending = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
         recyclerViewSeries1.setLayoutManager(linearLayoutManagerTrending);
 
+        recyclerViewSeries2 = (RecyclerView) unaVistaADevolver.findViewById(R.id.listasDePelis_recyclerTopRated);
+        LinearLayoutManager linearLayoutManager2 = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerViewSeries2.setLayoutManager(linearLayoutManager2);
 
         //TENGO QUE SETEAR EL LISTENER POR SEPARADO PORQUE SI EN LA MISMA LINEA CREO EL NEW ADAPTER Y LO SETEO AL LISTENER POR CONSTRUCTOR TIRA NULLPOINTER.
         unAdapterSeries1 = new AdapterRecyclerSeries(getActivity());
+        unAdapterSeries2 = new AdapterRecyclerSeries(getActivity());
+        unAdapterSeries3 = new AdapterRecyclerSeries(getActivity());
 
         peliculaController.obtenerSeriesTMDB(TMDBHelper.getTVPopular(TMDBHelper.language_ENGLISH, 1), getActivity(), new ResultListener() {
         @Override
@@ -67,15 +76,41 @@ public class FragmentRecycleSeries extends Fragment {
             unAdapterSeries1.setListaDeSeries(series);
             unAdapterSeries1.notifyDataSetChanged();
 
-
-
         }
         });
 
         recyclerViewSeries1.setAdapter(unAdapterSeries1);
 
 
+        peliculaController.obtenerSeriesTMDB(TMDBHelper.getTVTopRated(TMDBHelper.language_ENGLISH, 1), getActivity(), new ResultListener() {
+            @Override
+            public void finish(Object resultado) {
+                ContainerSerieDB containerSerieDB = (ContainerSerieDB) resultado;
+                ArrayList<SerieDB> series = containerSerieDB.getResults();
+                unAdapterSeries2.setListaDeSeries(series);
+                unAdapterSeries2.notifyDataSetChanged();
+            }
+        });
 
+        recyclerViewSeries2.setAdapter(unAdapterSeries2);
+
+        recyclerViewSeries3 = (RecyclerView) unaVistaADevolver.findViewById(R.id.listasDePelis_recyclerHighestGrossing);
+        LinearLayoutManager linearLayoutManager3 = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerViewSeries3.setLayoutManager(linearLayoutManager3);
+
+
+
+        peliculaController.obtenerSeriesTMDB(TMDBHelper.getTVAiringToday(TMDBHelper.language_ENGLISH, 1), getActivity(), new ResultListener() {
+            @Override
+            public void finish(Object resultado) {
+                ContainerSerieDB containerSerieDB = (ContainerSerieDB) resultado;
+                ArrayList<SerieDB> series = containerSerieDB.getResults();
+                unAdapterSeries3.setListaDeSeries(series);
+                unAdapterSeries3.notifyDataSetChanged();
+
+            }
+        });
+        recyclerViewSeries3.setAdapter(unAdapterSeries3);
 
         return unaVistaADevolver;
     }

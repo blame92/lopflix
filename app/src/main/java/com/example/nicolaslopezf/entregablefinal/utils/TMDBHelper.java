@@ -161,5 +161,9 @@ public class TMDBHelper {    private static String apiKey = "cb805b840f7577048a3
     public static String getTVEpisodeDetail(String tvShowId, Integer season, String language){
         return baseUrl + "/tv/"+tvShowId+"/season/"+season.toString()+"?api_key=" +apiKey +"&language="+language;
     }
+    public static String getTVAiringToday(String language, Integer page){
+        return baseUrl + "/tv/airing_today?api_key=" + apiKey + "&language="+language + "&page=" +page.toString();
+
+    }
 }
 

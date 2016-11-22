@@ -2,7 +2,11 @@ package com.example.nicolaslopezf.entregablefinal.model;
 
 
 import com.example.nicolaslopezf.entregablefinal.dao.PeliculaDAO;
+import com.google.firebase.database.Exclude;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Nicolas Lopez F on 10/21/2016.
@@ -226,6 +230,14 @@ public class Pelicula extends PeliculaPadre {
         result = 31 * result + (imdbRating != null ? imdbRating.hashCode() : 0);
         result = 31 * result + (poster != null ? poster.hashCode() : 0);
         result = 31 * result + (imdbID != null ? imdbID.hashCode() : 0);
+        return result;
+    }
+
+
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("uid", imdbID);
+
         return result;
     }
 }

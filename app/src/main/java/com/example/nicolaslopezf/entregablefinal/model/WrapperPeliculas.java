@@ -8,11 +8,11 @@ import java.util.ArrayList;
  * Created by Nicolas Lopez F on 10/22/2016.
  */
 
-public class WrapperPeliculas {
+public class WrapperPeliculas  {
     @SerializedName("peliculas")
-    private ArrayList<Pelicula> listaDePeliculas;
+    private ArrayList<Pelicula> watchlist;
 
     public ArrayList<Pelicula> getListaDePeliculas() {
-        return listaDePeliculas;
+        return watchlist;
     }
 }

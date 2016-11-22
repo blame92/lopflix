@@ -806,7 +806,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">f4a7e12f-044a-44c9-b832-f832b7b1d124</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">750519f8-0bc2-4dbe-b080-36a99c8d255f</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter your code.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
@@ -866,6 +866,7 @@
     <string name="google_storage_bucket" translatable="false">lopflix-940b2.appspot.com</string>
     <string name="highest_grossing_movies_2016">Highest Grossing Movies 2016</string>
     <string name="kit_name">Twitter</string>
+    <string name="login_as_guest"><u>Log as guest</u></string>
     <string name="messenger_send_button_text">Send</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>

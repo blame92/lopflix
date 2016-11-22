@@ -13,8 +13,10 @@ import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
+import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.model.SerieDB.ContainerSerieDB;
 import com.example.nicolaslopezf.entregablefinal.model.SerieDB.SerieDB;
+import com.example.nicolaslopezf.entregablefinal.model.Usuario.Usuario;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
 import com.facebook.FacebookSdk;
@@ -26,6 +28,12 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.TwitterAuthProvider;
+import com.google.firebase.auth.UserInfo;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
@@ -135,6 +143,9 @@ public class ActivityLogin  extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                 handleTwitterSession(session);
                 Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+
+                FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
+                logUserToFirebaseDatabase(usuarioAAgregar);
                 startActivity(intent);
 
             }
@@ -235,5 +246,36 @@ public class ActivityLogin  extends AppCompatActivity {
     public void loginAsGuest(View view){
         Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
         startActivity(intent);
+
+
+    }
+
+    public void logUserToFirebaseDatabase(final FirebaseUser user){
+        final Usuario usuario = new Usuario(user.getProviderId(), user.getEmail());
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+        final String id = user.getUid();
+        database.getReference("users").child(id).addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        if (!dataSnapshot.exists()) {
+                            dataSnapshot.getRef().
+                                    setValue(usuario);
+                        }
+                        else {
+
+                        }
+
+                    }
+
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
+                    }
+                });
+
     }
 }

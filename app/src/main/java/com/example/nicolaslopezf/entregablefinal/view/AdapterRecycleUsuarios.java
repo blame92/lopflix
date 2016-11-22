@@ -31,11 +31,11 @@ public class AdapterRecycleUsuarios  extends RecyclerView.Adapter{
 
     public AdapterRecycleUsuarios(Context unContexto, ArrayList<Usuario> listaDeUsuarios) {
         this.unContexto = unContexto;
-        listaDeUsuarios.add(new Usuario("Blamme1993", "24","Rom-Com"));
-        listaDeUsuarios.add(new Usuario("Santi Iraola", "24","Accion"));
-        listaDeUsuarios.add(new Usuario("Fezilio", "24","porno"));
-        listaDeUsuarios.add(new Usuario("McLopi", "24","Comedia"));
-        listaDeUsuarios.add(new Usuario("Blamme1992", "24","Rom-Com"));
+//        listaDeUsuarios.add(new Usuario("Blamme1993", "24","Rom-Com"));
+//        listaDeUsuarios.add(new Usuario("Santi Iraola", "24","Accion"));
+//        listaDeUsuarios.add(new Usuario("Fezilio", "24","porno"));
+//        listaDeUsuarios.add(new Usuario("McLopi", "24","Comedia"));
+//        listaDeUsuarios.add(new Usuario("Blamme1992", "24","Rom-Com"));
 
         this.listaDeUsuarios = listaDeUsuarios;    }
 
@@ -91,9 +91,9 @@ public class AdapterRecycleUsuarios  extends RecyclerView.Adapter{
         }
         public void bindReceta(Usuario unUsuario){
             imagenUsuario.setBackgroundResource(R.drawable.lopo_icon_two);
-            nombreUsuario.setText(unUsuario.getUserName());
-            edadUsuario.setText(unUsuario.getAge() + " anios");
-            generoFavUsuario.setText(unUsuario.getFavGenre());
+//            nombreUsuario.setText(unUsuario.getUserName());
+//            edadUsuario.setText(unUsuario.getAge() + " anios");
+//            generoFavUsuario.setText(unUsuario.getFavGenre());
         }
     }
 }

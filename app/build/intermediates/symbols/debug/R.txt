@@ -1605,11 +1605,12 @@ int string google_crash_reporting_api_key 0x7f070076
 int string google_storage_bucket 0x7f070077
 int string highest_grossing_movies_2016 0x7f070078
 int string kit_name 0x7f070079
+int string login_as_guest 0x7f07007a
 int string messenger_send_button_text 0x7f070038
 int string search_menu_title 0x7f070039
 int string status_bar_notification_info_overflow 0x7f07003a
-int string top_movies_2016 0x7f07007a
-int string trending_movies 0x7f07007b
+int string top_movies_2016 0x7f07007b
+int string trending_movies 0x7f07007c
 int string tw__allow_btn_txt 0x7f07003b
 int string tw__composer_hint 0x7f07003c
 int string tw__cta_text 0x7f07003d
@@ -1622,7 +1623,7 @@ int string tw__max_tweet_chars 0x7f070043
 int string tw__not_now_btn_txt 0x7f070044
 int string tw__pause 0x7f070045
 int string tw__play 0x7f070046
-int string tw__play_store 0x7f07007c
+int string tw__play_store 0x7f07007d
 int string tw__post_tweet 0x7f070047
 int string tw__relative_date_format_long 0x7f070048
 int string tw__relative_date_format_short 0x7f070049

@@ -4027,11 +4027,12 @@ containing a value of this type.
         public static final int google_storage_bucket=0x7f070077;
         public static final int highest_grossing_movies_2016=0x7f070078;
         public static final int kit_name=0x7f070079;
+        public static final int login_as_guest=0x7f07007a;
         public static final int messenger_send_button_text=0x7f070038;
         public static final int search_menu_title=0x7f070039;
         public static final int status_bar_notification_info_overflow=0x7f07003a;
-        public static final int top_movies_2016=0x7f07007a;
-        public static final int trending_movies=0x7f07007b;
+        public static final int top_movies_2016=0x7f07007b;
+        public static final int trending_movies=0x7f07007c;
         public static final int tw__allow_btn_txt=0x7f07003b;
         public static final int tw__composer_hint=0x7f07003c;
         public static final int tw__cta_text=0x7f07003d;
@@ -4044,7 +4045,7 @@ containing a value of this type.
         public static final int tw__not_now_btn_txt=0x7f070044;
         public static final int tw__pause=0x7f070045;
         public static final int tw__play=0x7f070046;
-        public static final int tw__play_store=0x7f07007c;
+        public static final int tw__play_store=0x7f07007d;
         public static final int tw__post_tweet=0x7f070047;
         public static final int tw__relative_date_format_long=0x7f070048;
         public static final int tw__relative_date_format_short=0x7f070049;

@@ -10,84 +10,70 @@ import java.util.ArrayList;
 
 public class Usuario {
 
-    private String userName;
-    private String password;
-    private String age;
-    private Integer userImage;
-    private String favGenre;
-    private ArrayList<Usuario> friends;
-    private ArrayList<Pelicula> misPeliculas;
+    private String id;
+    private String foto;
+    private String nombre;
+    private String email;
+    private ArrayList<String> amigos;
+    private ArrayList<String> watchlist;
 
-
-    public Usuario(String userName, String password, String age, Integer userImage, String favGenre, ArrayList<Usuario> friends, ArrayList<Pelicula> misPeliculas) {
-        this.userName = userName;
-        this.password = password;
-        this.age = age;
-        this.userImage = userImage;
-        this.favGenre = favGenre;
-        this.friends = friends;
-        this.misPeliculas = misPeliculas;
+    public Usuario(String id, String foto, String nombre, String email) {
+        this.id = id;
+        this.foto = foto;
+        this.nombre = nombre;
+        this.email = email;
     }
 
-    public Usuario(String userName, String age, String favGenre) {
-        this.userName = userName;
-        this.age = age;
-        this.favGenre = favGenre;
+    public Usuario(String email, String id) {
+        this.email = email;
+        this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getId() {
+        return id;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getPassword() {
-        return password;
+    public String getFoto() {
+        return foto;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
-    public String getAge() {
-        return age;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public Integer getUserImage() {
-        return userImage;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserImage(Integer userImage) {
-        this.userImage = userImage;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getFavGenre() {
-        return favGenre;
+    public ArrayList<String> getAmigos() {
+        return amigos;
     }
 
-    public void setFavGenre(String favGenre) {
-        this.favGenre = favGenre;
+    public void setAmigos(ArrayList<String> amigos) {
+        this.amigos = amigos;
     }
 
-    public ArrayList<Usuario> getFriends() {
-        return friends;
+    public ArrayList<String> getWatchlist() {
+        return watchlist;
     }
 
-    public void setFriends(ArrayList<Usuario> friends) {
-        this.friends = friends;
-    }
-
-    public ArrayList<Pelicula> getMisPeliculas() {
-        return misPeliculas;
-    }
-
-    public void setMisPeliculas(ArrayList<Pelicula> misPeliculas) {
-        this.misPeliculas = misPeliculas;
+    public void setWatchlist(ArrayList<String> watchlist) {
+        this.watchlist = watchlist;
     }
 }

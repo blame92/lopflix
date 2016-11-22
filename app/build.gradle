@@ -62,6 +62,8 @@ dependencies {
     compile('com.twitter.sdk.android:twitter:2.2.0@aar') {
         transitive = true;
     }
+    compile 'com.google.firebase:firebase-storage:9.4.0'
+
 
 }
 apply plugin: 'com.google.gms.google-services'

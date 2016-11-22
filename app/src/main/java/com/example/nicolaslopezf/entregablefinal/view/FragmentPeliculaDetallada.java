@@ -24,12 +24,26 @@ import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDBTrailerContainer;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.WrapperPeliculas;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
 import com.example.nicolaslopezf.entregablefinal.view.YouTube.YouTubeFragment;
 import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.AdapterRecyclerSoloImagen;
 import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.FragmentRecyclerSoloImagen;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import static android.R.attr.key;
 
 /**
  * Created by mora on 24/10/2016.
@@ -86,13 +100,46 @@ public class FragmentPeliculaDetallada extends Fragment {
                         peliculaController.changeFavoriteStatus(getActivity(),pelicula,imdbID,tmdbID);
 
                         if(peliculaController.esFavorita(pelicula,getActivity())){
+
+                            // codigo que agrega una pelicula a la lista de favoritos de firbase
+                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            final DatabaseReference databaseReference = database.getReference("users");
+                            FirebaseAuth mAuth;
+                            mAuth  = FirebaseAuth.getInstance();
+                            final FirebaseUser user = mAuth.getCurrentUser();
+                            ArrayList<String> container = new ArrayList<>();
+                            container.add(pelicula.getImdbID());
+                            container.add(pelicula.getTitle());
+                            databaseReference.child(user.getUid()).child("watchlist").child(pelicula.getImdbID()).setValue(pelicula);
+
+
                             flotingActionB.setImageResource(R.mipmap.ic_favorite_full);
                             flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
 
                         }else{
+                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            FirebaseAuth mAuth;
+                            mAuth  = FirebaseAuth.getInstance();
+                            final FirebaseUser user = mAuth.getCurrentUser();
+                            database.getReference("users").child(user.getUid()).child("watchlist").child(pelicula.getImdbID()).equalTo(pelicula.getImdbID()).addListenerForSingleValueEvent(
+                                    new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                            dataSnapshot.getRef().
+                                                    setValue(null);
+                                        }
+
+
+                                        @Override
+                                        public void onCancelled(DatabaseError databaseError) {
+                                            Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
+                                        }
+                                    });
                             flotingActionB.setImageResource(R.mipmap.ic_favorite);
                             flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.backgroundColor)));
                         }
+
                         Toast.makeText(getActivity(), pelicula.getTitle()+  " fue agregado a tu lista de favorito", Toast.LENGTH_SHORT).show();
                     }
                 });
