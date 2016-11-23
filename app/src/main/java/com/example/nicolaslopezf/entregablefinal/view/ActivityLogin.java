@@ -233,6 +233,8 @@ public class ActivityLogin  extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d("twitter", "signInWithCredential:onComplete:" + task.isSuccessful());
+                        FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
+                        logUserToFirebaseDatabase(usuarioAAgregar);
 
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the

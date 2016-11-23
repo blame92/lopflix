@@ -42,6 +42,7 @@ public class FragmentUsuarioDetalle extends Fragment {
 
         recyclerViewUsuarios.setLayoutManager(linearLayoutManager);
         unAdapterFavoritasUsuario = new AdapterRecyclePeliculasFavoritos(getActivity());
+        unAdapterFavoritasUsuario.setListener(new ListenerPeliculasSoloImagen(recyclerViewUsuarios,unAdapterFavoritasUsuario));
         final ArrayList<Pelicula> peliculas = new ArrayList<>();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -75,4 +76,33 @@ public class FragmentUsuarioDetalle extends Fragment {
 
 
     }
+    public class ListenerPeliculasSoloImagen implements View.OnClickListener {
+
+        private RecyclerView recyclerViewAUsar;
+        private AdapterRecyclePeliculasFavoritos adapterAUsar;
+
+        public ListenerPeliculasSoloImagen(RecyclerView recyclerViewAUsar, AdapterRecyclePeliculasFavoritos adapterAUsar) {
+            this.recyclerViewAUsar = recyclerViewAUsar;
+            this.adapterAUsar = adapterAUsar;
+        }
+
+        @Override
+        public void onClick(View view) {
+
+            Integer posicionTocada = recyclerViewAUsar.getChildAdapterPosition(view);
+            Pelicula peliculaTocada = adapterAUsar.getPeliculaAtPosition(posicionTocada);
+
+            Log.d("imagen",peliculaTocada.getPoster());
+
+            FragmentRecycleGridFavoritas.ComunicadorFavoritosActivity unComunicador = (FragmentRecycleGridFavoritas.ComunicadorFavoritosActivity) getActivity();
+            unComunicador.clickearonEstaPeliculaDeFavoritos(peliculaTocada);
+
+
+        }
+    }
+
+
+
+
+
 }

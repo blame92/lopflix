@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,7 @@ public class FragmentRecyclerUsuario extends Fragment {
         final ArrayList<Usuario> usuariosDelAdapter = new ArrayList<>();
         unAdapterUsuarios = new AdapterRecycleUsuarios(getActivity(),usuariosDelAdapter,new ListenerUsuarios());
         recyclerViewUsuario.setAdapter(unAdapterUsuarios);
+        //busca el usuario de firebase
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         FirebaseAuth mAuth  = FirebaseAuth.getInstance();
         FirebaseUser usuarioLogeado = mAuth.getCurrentUser();
@@ -60,6 +62,7 @@ public class FragmentRecyclerUsuario extends Fragment {
 
             }
         });
+
         return unaVistaADevolver;
 
     }
@@ -80,5 +83,35 @@ public class FragmentRecyclerUsuario extends Fragment {
         public void clickearonEsteUsuario(Usuario usuarioClick);
 
     }
+    public class ListenerPeliculasSoloImagen implements View.OnClickListener {
+
+        private RecyclerView recyclerViewAUsar;
+        private AdapterRecyclePeliculasFavoritos adapterAUsar;
+
+        public ListenerPeliculasSoloImagen(RecyclerView recyclerViewAUsar, AdapterRecyclePeliculasFavoritos adapterAUsar) {
+            this.recyclerViewAUsar = recyclerViewAUsar;
+            this.adapterAUsar = adapterAUsar;
+        }
+
+        @Override
+        public void onClick(View view) {
+
+            Integer posicionTocada = recyclerViewAUsar.getChildAdapterPosition(view);
+            Pelicula peliculaTocada = adapterAUsar.getPeliculaAtPosition(posicionTocada);
+
+            Log.d("imagen",peliculaTocada.getPoster());
+
+            FragmentRecycleGridFavoritas.ComunicadorFavoritosActivity unComunicador = (FragmentRecycleGridFavoritas.ComunicadorFavoritosActivity) getActivity();
+            unComunicador.clickearonEstaPeliculaDeFavoritos(peliculaTocada);
+
+
+        }
+    }
+    public interface ComunicadorFavoritosActivity{
+        void clickearonEstaPeliculaDeFavoritos(Pelicula peliculaClickeada);
+
+    }
+
+
 
 }
