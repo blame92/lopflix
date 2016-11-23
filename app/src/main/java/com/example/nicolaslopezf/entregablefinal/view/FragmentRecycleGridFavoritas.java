@@ -58,7 +58,6 @@ public class FragmentRecycleGridFavoritas extends Fragment {
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        //ArrayList<Pelicula> peliculas = new ArrayList<>();
                         for(DataSnapshot userDataSnapshot : dataSnapshot.getChildren()){
                             Pelicula pelicula = userDataSnapshot.getValue(Pelicula.class);
                             peliculas.add(pelicula);

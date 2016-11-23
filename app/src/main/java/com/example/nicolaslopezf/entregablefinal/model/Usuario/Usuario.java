@@ -14,8 +14,11 @@ public class Usuario {
     private String foto;
     private String nombre;
     private String email;
-    private ArrayList<String> amigos;
-    private ArrayList<String> watchlist;
+//    private ArrayList<String> amigos;
+//    private ArrayList<String> watchlist;
+
+    public Usuario() {
+    }
 
     public Usuario(String id, String foto, String nombre, String email) {
         this.id = id;
@@ -61,19 +64,19 @@ public class Usuario {
         this.email = email;
     }
 
-    public ArrayList<String> getAmigos() {
-        return amigos;
-    }
-
-    public void setAmigos(ArrayList<String> amigos) {
-        this.amigos = amigos;
-    }
-
-    public ArrayList<String> getWatchlist() {
-        return watchlist;
-    }
-
-    public void setWatchlist(ArrayList<String> watchlist) {
-        this.watchlist = watchlist;
-    }
+//    public ArrayList<String> getAmigos() {
+//        return amigos;
+//    }
+//
+//    public void setAmigos(ArrayList<String> amigos) {
+//        this.amigos = amigos;
+//    }
+//
+//    public ArrayList<Pelicula> getWatchlist() {
+//        return watchlist;
+//    }
+//
+//    public void setWatchlist(ArrayList<Pelicula> watchlist) {
+//        this.watchlist = watchlist;
+//    }
 }

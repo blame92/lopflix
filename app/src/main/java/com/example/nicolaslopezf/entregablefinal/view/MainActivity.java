@@ -11,21 +11,27 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.alexzh.circleimageview.CircleImageView;
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.Usuario.Usuario;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.view.viewsparafragmentinicio.FragmentRecyclerSoloImagen;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.squareup.picasso.Picasso;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+
+import java.util.zip.Inflater;
+
 import io.fabric.sdk.android.Fabric;
 
-public class MainActivity extends AppCompatActivity implements FragmentRecyclerSoloImagen.ComunicadorFragmentActivity,FragmentRecycleGridFavoritas.ComunicadorFavoritosActivity {
+public class MainActivity extends AppCompatActivity implements FragmentRecyclerSoloImagen.ComunicadorFragmentActivity,FragmentRecycleGridFavoritas.ComunicadorFavoritosActivity,FragmentRecyclerUsuario.ComunicadorFragmentActivity {
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
     private static final String TWITTER_KEY = "o0AwMxuktney6F0OxNZXhup35";
@@ -58,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
         unFragmentManager = getSupportFragmentManager();
 
 
-
         FragmentTransaction unaTransaction = unFragmentManager.beginTransaction();
         unaTransaction.replace(R.id.acaVaElFragmentPelicula, fragmentViewPager);
         unaTransaction.commit();
@@ -70,6 +75,12 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
         navigationView.setNavigationItemSelectedListener(new NavigationViewPorGeneroListener());
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+
+//         agrega la foto del usuario a el circle image view
+//        CircleImageView circleImageView = (CircleImageView) findViewById(R.id.navigationheader_circleimage);
+//        FirebaseAuth mAuth  = FirebaseAuth.getInstance();
+//        FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
+//        Picasso.with(this).load(usuarioAAgregar.getPhotoUrl().toString()).into(circleImageView);
 
 
     }
@@ -119,7 +130,21 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
                 unaTransaccion.commit();
             }
         });
-    }
+    }    public void clickearonEsteUsuario(Usuario usuarioClickeado) {
+
+
+                FragmentUsuarioDetalle fragmentUsuarioDetalle = new FragmentUsuarioDetalle();
+
+                Bundle unBundle = new Bundle();
+                unBundle.putString("idClick", usuarioClickeado.getId());
+
+                fragmentUsuarioDetalle.setArguments(unBundle);
+
+                FragmentTransaction unaTransaccion = unFragmentManager.beginTransaction();
+                unaTransaccion.replace(R.id.acaVaElFragmentPelicula, fragmentUsuarioDetalle).addToBackStack("backButton");
+                unaTransaccion.commit();
+            }
+
 
 
     @Override

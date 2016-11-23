@@ -120,7 +120,7 @@ public class FragmentPeliculaDetallada extends Fragment {
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
                             FirebaseAuth mAuth;
                             mAuth  = FirebaseAuth.getInstance();
-                            final FirebaseUser user = mAuth.getCurrentUser();
+                            FirebaseUser user = mAuth.getCurrentUser();
                             database.getReference("users").child(user.getUid()).child("watchlist").child(pelicula.getImdbID()).equalTo(pelicula.getImdbID()).addListenerForSingleValueEvent(
                                     new ValueEventListener() {
                                         @Override

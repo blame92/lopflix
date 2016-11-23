@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="5adee53405735829d3eb19203050a92499a78574">
+        sha1="794af1f66739dee615b2dc05f09c664e88ba4cdf">
         <dex dex="C:\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0a7c962d1c3df15899ca702757967b9b06eef80e\classes.dex" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="be94758ad0f6029f5fa18ab815a0cdfe7ddece52">
+        sha1="b59797caea83eb6720ae9451a77963db77bf099f">
         <dex dex="C:\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a178800e3e123878c4461e788f307fe4e20b27d5\classes.dex" />
     </item>
     <item

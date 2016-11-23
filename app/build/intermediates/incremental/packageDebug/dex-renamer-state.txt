@@ -1,4 +1,4 @@
-#Tue Nov 22 18:13:33 ART 2016
+#Wed Nov 23 18:25:00 ART 2016
 base.0=C\:\\loflixOficial\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a178800e3e123878c4461e788f307fe4e20b27d5
 renamed.1=classes.dex
 renamed.0=classes2.dex

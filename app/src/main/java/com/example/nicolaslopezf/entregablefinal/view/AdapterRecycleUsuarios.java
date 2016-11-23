@@ -9,7 +9,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.nicolaslopezf.entregablefinal.R;
+import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.model.Usuario.Usuario;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -29,14 +37,8 @@ public class AdapterRecycleUsuarios  extends RecyclerView.Adapter{
 
     }
 
-    public AdapterRecycleUsuarios(Context unContexto, ArrayList<Usuario> listaDeUsuarios) {
+    public AdapterRecycleUsuarios(Context unContexto, final ArrayList<Usuario> listaDeUsuarios) {
         this.unContexto = unContexto;
-//        listaDeUsuarios.add(new Usuario("Blamme1993", "24","Rom-Com"));
-//        listaDeUsuarios.add(new Usuario("Santi Iraola", "24","Accion"));
-//        listaDeUsuarios.add(new Usuario("Fezilio", "24","porno"));
-//        listaDeUsuarios.add(new Usuario("McLopi", "24","Comedia"));
-//        listaDeUsuarios.add(new Usuario("Blamme1992", "24","Rom-Com"));
-
         this.listaDeUsuarios = listaDeUsuarios;    }
 
     public ArrayList<Usuario> getListaDeUsuarios() {
@@ -45,6 +47,9 @@ public class AdapterRecycleUsuarios  extends RecyclerView.Adapter{
 
     public void setListaDeUsuarios(ArrayList<Usuario> listaDeUsuarios) {
         this.listaDeUsuarios = listaDeUsuarios;
+    }
+    public Usuario getUsuarioAtPosition(Integer position){
+        return listaDeUsuarios.get(position);
     }
 
     @Override
@@ -90,8 +95,9 @@ public class AdapterRecycleUsuarios  extends RecyclerView.Adapter{
 
         }
         public void bindReceta(Usuario unUsuario){
-            imagenUsuario.setBackgroundResource(R.drawable.lopo_icon_two);
-//            nombreUsuario.setText(unUsuario.getUserName());
+           // imagenUsuario.setBackgroundResource(R.drawable.lopo_icon_two);
+            Picasso.with(unContexto).load(unUsuario.getFoto()).into(imagenUsuario);
+            nombreUsuario.setText(unUsuario.getNombre());
 //            edadUsuario.setText(unUsuario.getAge() + " anios");
 //            generoFavUsuario.setText(unUsuario.getFavGenre());
         }

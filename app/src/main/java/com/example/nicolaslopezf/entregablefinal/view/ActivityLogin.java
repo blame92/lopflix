@@ -58,8 +58,8 @@ public class ActivityLogin  extends AppCompatActivity {
 
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "o0AwMxuktney6F0OxNZXhup35";
-    private static final String TWITTER_SECRET = "bkItOFtZmpTPmBDWP3zEylH2iYeOUL1eLy6a3AVaV444eXra0w";
+    private static final String TWITTER_KEY = "oLl1QskkkJO3g28l9rSP3tsbP";
+    private static final String TWITTER_SECRET = "chc1vN6KfJGP7GHQyr41Zm0UJ0RIrZkQ8nNOV1WHPkLOrovBhm";
     private FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -142,10 +142,12 @@ public class ActivityLogin  extends AppCompatActivity {
                 String msg = "@" + session.getUserName() + " logged in! (#" + session.getUserId() + ")";
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                 handleTwitterSession(session);
-                Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
 
                 FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
                 logUserToFirebaseDatabase(usuarioAAgregar);
+                Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+
+
                 startActivity(intent);
 
             }
@@ -156,7 +158,7 @@ public class ActivityLogin  extends AppCompatActivity {
         });
 
 
-//        String email = "prueba@prueba.com";
+//        String email = "prueba2@prueba.com";
 //        String pas = "1235678";
 //
 //        mAuth.createUserWithEmailAndPassword(email, pas)
@@ -200,7 +202,9 @@ public class ActivityLogin  extends AppCompatActivity {
     }
     public void insertMovieOntoImageView(int movieNumber,ImageView imageView){
         Picasso.with(ActivityLogin.this).load(TMDBHelper.getImagePoster(TMDBHelper.IMAGE_SIZE_H632, backgroundList.get(movieNumber).getPoster())).
-                error(R.mipmap.ic_launcher).placeholder(R.mipmap.ic_launcher).into(imageView);
+                error(R.mipmap.ic_launcher).into(imageView);
+
+
 
     }
     public void onClickFondo(View view){
@@ -237,6 +241,7 @@ public class ActivityLogin  extends AppCompatActivity {
                             Log.w("twitter", "signInWithCredential", task.getException());
                             Toast.makeText(ActivityLogin.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
+
                         }
 
                         // ...
@@ -251,7 +256,6 @@ public class ActivityLogin  extends AppCompatActivity {
     }
 
     public void logUserToFirebaseDatabase(final FirebaseUser user){
-        final Usuario usuario = new Usuario(user.getProviderId(), user.getEmail());
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
@@ -261,8 +265,12 @@ public class ActivityLogin  extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (!dataSnapshot.exists()) {
+                            Usuario usuario = new Usuario(user.getEmail(), user.getUid());
+                            usuario.setFoto(user.getPhotoUrl().toString());
+                            usuario.setNombre(user.getDisplayName());
                             dataSnapshot.getRef().
                                     setValue(usuario);
+
                         }
                         else {
 

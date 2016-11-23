@@ -5,29 +5,29 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="510586716367236"
+    timestamp="597674241107957"
     token="-1653956766172365964"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="429" />
+        duration="1944" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="43" />
+        duration="2499" />
     <task
         name="verifier"
-        duration="5" />
+        duration="763" />
 
     <artifact
         location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="510586716367236"
+        timestamp="597674241107957"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
