@@ -4,12 +4,12 @@
         "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_tint_seek_thumb.xml"
-    },
-    {
         "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
         "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
@@ -88,12 +88,12 @@
         "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
         "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
