@@ -1,7 +1,7 @@
-#Wed Nov 23 20:13:50 ART 2016
-base.0=C\:\\loflixOficial\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a178800e3e123878c4461e788f307fe4e20b27d5
+#Fri Nov 25 20:34:11 ART 2016
+base.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_32c7bf23ca9c6f08735942ef79b474ec53c79e93
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=C\:\\loflixOficial\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0a7c962d1c3df15899ca702757967b9b06eef80e\\classes.dex
-base.1=C\:\\loflixOficial\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0a7c962d1c3df15899ca702757967b9b06eef80e
-file.0=C\:\\loflixOficial\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a178800e3e123878c4461e788f307fe4e20b27d5\\classes.dex
+file.1=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7f9284781553d4e50938fe91d756b9a9de514228/classes.dex
+base.1=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7f9284781553d4e50938fe91d756b9a9de514228
+file.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_32c7bf23ca9c6f08735942ef79b474ec53c79e93/classes.dex

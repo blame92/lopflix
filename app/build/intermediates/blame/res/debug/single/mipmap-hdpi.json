@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\loflixOficial\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_favorite.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/res/mipmap-hdpi/ic_favorite.png"
     },
     {
-        "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_favorite.png",
-        "source": "C:\\loflixOficial\\app\\src\\main\\res\\mipmap-hdpi\\ic_favorite.png"
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_favorite_full.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/res/mipmap-hdpi/ic_favorite_full.png"
     },
     {
-        "merged": "C:\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_favorite_full.png",
-        "source": "C:\\loflixOficial\\app\\src\\main\\res\\mipmap-hdpi\\ic_favorite_full.png"
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]

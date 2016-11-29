@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
+import com.example.nicolaslopezf.entregablefinal.model.MovieDB.IDMBidModelling.ContainerMovieIMDBid;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.model.SerieDB.ContainerSerieDB;
@@ -80,7 +81,7 @@ public class ActivityLogin  extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
         setContentView(R.layout.activity_login);
-        PeliculaController peliculaController = new PeliculaController();
+        final PeliculaController peliculaController = new PeliculaController();
         imageView1 = (ImageView) findViewById(R.id.activityLogin_imageView11);
         imageView2 = (ImageView) findViewById(R.id.activityLogin_imageView12);
         imageView3 = (ImageView) findViewById(R.id.activityLogin_imageView13);
@@ -92,22 +93,29 @@ public class ActivityLogin  extends AppCompatActivity {
         imageView9 = (ImageView) findViewById(R.id.activityLogin_imageView33);
 
 
-        peliculaController.obtenerListaDePeliculasTMDB(TMDBHelper.getPopularMovies(TMDBHelper.language_ENGLISH,1),this, new ResultListener() {
+        peliculaController.obtenerListaDePeliculasTMDB(TMDBHelper.getPopularMovies(TMDBHelper.language_ENGLISH,1),this,
+                new ResultListener() {
             @Override
             public void finish(Object resultado) {
+
+
                 ContainerMovieDB peliculasTrending = (ContainerMovieDB) resultado;
-                backgroundList = peliculasTrending.getResult();
-                long seed = System.nanoTime();
-                Collections.shuffle(backgroundList, new Random(seed));
-                insertMovieOntoImageView(0,imageView1);
-                insertMovieOntoImageView(1,imageView2);
-                insertMovieOntoImageView(2,imageView3);
-                insertMovieOntoImageView(3,imageView4);
-                insertMovieOntoImageView(4,imageView5);
-                insertMovieOntoImageView(5,imageView6);
-                insertMovieOntoImageView(6,imageView7);
-                insertMovieOntoImageView(7,imageView8);
-                insertMovieOntoImageView(8,imageView9);
+
+                if(peliculasTrending != null){
+                    backgroundList = peliculasTrending.getResult();
+                    long seed = System.nanoTime();
+                    Collections.shuffle(backgroundList, new Random(seed));
+                    insertMovieOntoImageView(0,imageView1);
+                    insertMovieOntoImageView(1,imageView2);
+                    insertMovieOntoImageView(2,imageView3);
+                    insertMovieOntoImageView(3,imageView4);
+                    insertMovieOntoImageView(4,imageView5);
+                    insertMovieOntoImageView(5,imageView6);
+                    insertMovieOntoImageView(6,imageView7);
+                    insertMovieOntoImageView(7,imageView8);
+                    insertMovieOntoImageView(8,imageView9);
+                }
+
 
             }
 
@@ -143,8 +151,8 @@ public class ActivityLogin  extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                 handleTwitterSession(session);
 
-                FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
-                logUserToFirebaseDatabase(usuarioAAgregar);
+//                FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
+//                logUserToFirebaseDatabase(usuarioAAgregar);
                 Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
 
 
@@ -177,7 +185,7 @@ public class ActivityLogin  extends AppCompatActivity {
 //
 //                        // ...
 //                    }
-//                });
+//                });A
 
         //-------------------------------- TODO FACEBOOK LOGIN --------------------------------------------------------
 

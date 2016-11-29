@@ -21,6 +21,7 @@ import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
 import com.example.nicolaslopezf.entregablefinal.dao.PeliculaDAO;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
+import com.example.nicolaslopezf.entregablefinal.model.MovieDB.IDMBidModelling.ContainerMovieIMDBid;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDBTrailerContainer;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
@@ -84,7 +85,7 @@ public class FragmentPeliculaDetallada extends Fragment {
 
         final String imdbID = bundleRecibido.getString("imdbID");
 
-        final String tmdbID = bundleRecibido.getString("tmdbID");
+
 
         // toDo cambiar para que lo haga el controller
         PeliculaDAO peliculaDAO = new PeliculaDAO(getActivity());
@@ -97,7 +98,7 @@ public class FragmentPeliculaDetallada extends Fragment {
                     @Override
                     public void onClick(View v) {
                         PeliculaController peliculaController = new PeliculaController();
-                        peliculaController.changeFavoriteStatus(getActivity(),pelicula,imdbID,tmdbID);
+                        peliculaController.changeFavoriteStatus(getActivity(),pelicula,imdbID);
 
                         if(peliculaController.esFavorita(pelicula,getActivity())){
 
@@ -169,12 +170,50 @@ public class FragmentPeliculaDetallada extends Fragment {
 
         unAdapterPelicula = new AdapterRecyclerSoloImagen(getActivity());
         unAdapterPelicula.setListener(new ListenerPeliculasSoloImagen(recyclerViewPeliculas,unAdapterPelicula));
-        peliculaController.obtenerListaDePeliculasTMDB(TMDBHelper.getSimilarMovies(tmdbID, TMDBHelper.language_ENGLISH, 1), getActivity(), new ResultListener() {
+
+        peliculaController.obtenerTMDBidConIMDBid(imdbID, getActivity(), new ResultListener() {
             @Override
             public void finish(Object resultado) {
-                ContainerMovieDB peliculasSimilares = (ContainerMovieDB) resultado;
-                unAdapterPelicula.setListaDePeliculas(peliculasSimilares.getResult());
-                unAdapterPelicula.notifyDataSetChanged();
+                ContainerMovieIMDBid tmdbIDContainer = (ContainerMovieIMDBid) resultado;
+
+                String tmdbID = tmdbIDContainer.getMovieResult().get(0).getTmdbID();
+
+                peliculaController.obtenerListaDePeliculasTMDB(TMDBHelper.getSimilarMovies(tmdbID, TMDBHelper.language_ENGLISH, 1), getActivity(),
+                        new ResultListener() {
+                            @Override
+                            public void finish(Object resultado) {
+                                ContainerMovieDB peliculasSimilares = (ContainerMovieDB) resultado;
+
+                                unAdapterPelicula.setListaDePeliculas(peliculasSimilares.getResult());
+                                unAdapterPelicula.notifyDataSetChanged();
+                            }
+                        });
+
+                peliculaController.obtenerTrailerDePeliculaTMDB(getActivity(), tmdbID, new ResultListener() {
+                    @Override
+                    public void finish(Object resultado) {
+                        MovieDBTrailerContainer movieDBTrailerContainer = (MovieDBTrailerContainer) resultado;
+                        Log.d("trailer",movieDBTrailerContainer.toString());
+                        String url;
+                        if(movieDBTrailerContainer.getTrailerArrayList().size() > 0){
+                            url = movieDBTrailerContainer.getTrailerArrayList().get(0).getTrailerUrl();
+                        }
+                        else {
+                            url = "zX5XasRcGBg";
+                        }
+
+                        Bundle bundle = new Bundle();
+                        bundle.putString("url",url);
+                        youTubeFragment.setArguments(bundle);
+
+                        unFragmentManager = getFragmentManager();
+                        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.fragmentPeliculaDetalle_alojadorDeYoutube,youTubeFragment);
+                        fragmentTransaction.commit();
+
+                    }
+                });
+
             }
         });
 
@@ -188,30 +227,7 @@ public class FragmentPeliculaDetallada extends Fragment {
 //            }
 //        });
 
-        peliculaController.obtenerTrailerDePeliculaTMDB(getActivity(), tmdbID, new ResultListener() {
-            @Override
-            public void finish(Object resultado) {
-                MovieDBTrailerContainer movieDBTrailerContainer = (MovieDBTrailerContainer) resultado;
-                Log.d("trailer",movieDBTrailerContainer.toString());
-                String url;
-                if(movieDBTrailerContainer.getTrailerArrayList().size() > 0){
-                    url = movieDBTrailerContainer.getTrailerArrayList().get(0).getTrailerUrl();
-                }
-                else {
-                    url = "zX5XasRcGBg";
-                }
 
-                Bundle bundle = new Bundle();
-                bundle.putString("url",url);
-                youTubeFragment.setArguments(bundle);
-
-                unFragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentPeliculaDetalle_alojadorDeYoutube,youTubeFragment);
-                fragmentTransaction.commit();
-
-            }
-        });
 
 
         return viewADevolverInflado;

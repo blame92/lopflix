@@ -66,6 +66,12 @@ public class TMDBHelper {    private static String apiKey = "cb805b840f7577048a3
         return baseUrl + "/movie/" + movieID + "?api_key=" + apiKey +"&language="+language;
     }
 
+    // TODO: 11/24/16 MODELAR CONTAINER. 
+    public static String getMovieWithImdbID(String imdbID){
+
+        return baseUrl + "/find/" + imdbID + "?api_key=" + apiKey + "&external_source=imdb_id";
+    }
+
     public static String getTrailerURL(String movideID,String language){
         return baseUrl + "/movie/" + movideID + "/videos?api_key=" +apiKey +"&language="+language;
     }

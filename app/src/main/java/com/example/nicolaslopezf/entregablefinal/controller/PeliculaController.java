@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.example.nicolaslopezf.entregablefinal.dao.PeliculaDAO;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
+import com.example.nicolaslopezf.entregablefinal.model.MovieDB.IDMBidModelling.ContainerMovieIMDBid;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDBTrailerContainer;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
@@ -64,11 +65,11 @@ public class PeliculaController {
         return respuesta;
     }
 
-    public void changeFavoriteStatus(Context context, Pelicula pelicula, String imdbID,String tmdbID){
+    public void changeFavoriteStatus(Context context, Pelicula pelicula, String imdbID){
         PeliculaDAO peliculaDAO = new PeliculaDAO(context);
 
         if(!esFavorita(pelicula,context)){
-            peliculaDAO.addIDsToTable(imdbID,tmdbID);
+            //peliculaDAO.addIDsToTable(imdbID,tmdbID);
             peliculaDAO.addPeliculaFavoritaToDatabase(pelicula);
         }else{
             peliculaDAO.removePeliculaFavoritaFromDatabase(pelicula);
@@ -139,6 +140,21 @@ public class PeliculaController {
                     }
                 }
         ,context);
+    }
+
+    //Para armar las peliculas similares con el tmdbID a partir del imdbID
+    public void obtenerTMDBidConIMDBid(String imdbID, Context context, final ResultListener listenerFromView){
+
+        PeliculaDAO peliculaDAO = new PeliculaDAO(context);
+
+        peliculaDAO.flasehadaCreadoraDeAsync(new ContainerMovieIMDBid(), TMDBHelper.getMovieWithImdbID(imdbID),
+                new ResultListener<Object>() {
+
+                    @Override
+                    public void finish(Object resultado) {
+                        listenerFromView.finish(resultado);
+                    }
+                },context);
     }
 
     public void  obtenerPeliculaTMDB(String movieID,Context context, final ResultListener listenerFromView){

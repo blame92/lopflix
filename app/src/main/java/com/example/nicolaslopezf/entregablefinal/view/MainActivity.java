@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
         FragmentPeliculaDetallada fragmentPeliculaDetallada = new FragmentPeliculaDetallada();
         Bundle unBundle = new Bundle();
         unBundle.putString("imdbID",peliculaClickeada.getImdbID());
-        unBundle.putString("tmdbID",peliculaController.obtenerTMDBidDeBaseDeDatos(this,peliculaClickeada.getImdbID()));
+        //unBundle.putString("tmdbID",peliculaController.obtenerTMDBidDeBaseDeDatos(this,peliculaClickeada.getImdbID()));
 
         fragmentPeliculaDetallada.setArguments(unBundle);
 

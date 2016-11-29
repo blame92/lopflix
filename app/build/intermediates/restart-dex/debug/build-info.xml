@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
-    density="xxxhdpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="604240537339624"
-    token="-1653956766172365964"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="3345423056312"
+    token="494775607350069868"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1077" />
+        duration="108" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="121" />
+        duration="6" />
     <task
         name="verifier"
-        duration="14" />
+        duration="0" />
 
     <artifact
-        location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="604240537339624"
+        timestamp="3191969082892"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
+            location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="3345423056312"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
