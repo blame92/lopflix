@@ -12,20 +12,23 @@ import android.widget.Toast;
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
-import com.example.nicolaslopezf.entregablefinal.model.MovieDB.IDMBidModelling.ContainerMovieIMDBid;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
-import com.example.nicolaslopezf.entregablefinal.model.Pelicula;
-import com.example.nicolaslopezf.entregablefinal.model.SerieDB.ContainerSerieDB;
-import com.example.nicolaslopezf.entregablefinal.model.SerieDB.SerieDB;
 import com.example.nicolaslopezf.entregablefinal.model.Usuario.Usuario;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
+import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.TwitterAuthProvider;
@@ -49,7 +52,7 @@ import java.util.Collections;
 import java.util.Random;
 
 import io.fabric.sdk.android.Fabric;
-
+import com.facebook.FacebookSdk;
 /**
  * Created by Nicolas Lopez F on 11/13/2016.
  */
@@ -63,9 +66,11 @@ public class ActivityLogin  extends AppCompatActivity {
     private static final String TWITTER_SECRET = "chc1vN6KfJGP7GHQyr41Zm0UJ0RIrZkQ8nNOV1WHPkLOrovBhm";
     private FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
+    CallbackManager facebookCallBackManager;
 
     ImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView6,imageView7,imageView8,imageView9;
     private TwitterLoginButton loginButton;
+    private LoginButton loginButtonFacebook;
 
     ArrayList<MovieDB> backgroundList;
 
@@ -81,6 +86,47 @@ public class ActivityLogin  extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
         setContentView(R.layout.activity_login);
+
+       // FACEBOOK//
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        loginButtonFacebook = (LoginButton) findViewById(R.id.login_button_facebook);
+        loginButtonFacebook.setReadPermissions("email");
+        facebookCallBackManager = CallbackManager.Factory.create();
+        // If using in a fragment
+
+        // Other app specific specialization
+
+        // Callback registration
+        loginButtonFacebook.registerCallback(facebookCallBackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                // App code
+                handleFacebookAccessToken(loginResult.getAccessToken());
+                Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+
+                FirebaseUser user = mAuth.getCurrentUser();
+                logUserToFirebaseDatabase(user);
+                startActivity(intent);
+
+            }
+
+            @Override
+            public void onCancel() {
+                // App code
+            }
+
+            @Override
+            public void onError(FacebookException exception) {
+                // App code
+            }
+        });
+
+        //FACEBOOK FIN //
+
+
+
+
+
         final PeliculaController peliculaController = new PeliculaController();
         imageView1 = (ImageView) findViewById(R.id.activityLogin_imageView11);
         imageView2 = (ImageView) findViewById(R.id.activityLogin_imageView12);
@@ -166,29 +212,31 @@ public class ActivityLogin  extends AppCompatActivity {
         });
 
 
-//        String email = "prueba2@prueba.com";
-//        String pas = "1235678";
-//
-//        mAuth.createUserWithEmailAndPassword(email, pas)
-//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {
-//                        Log.d("twitter", "createUserWithEmail:onComplete:" + task.isSuccessful());
-//
-//                        // If sign in fails, display a message to the user. If sign in succeeds
-//                        // the auth state listener will be notified and logic to handle the
-//                        // signed in user can be handled in the listener.
-//                        if (!task.isSuccessful()) {
-//                            Toast.makeText(ActivityLogin.this, "fallo",
-//                                    Toast.LENGTH_SHORT).show();
-//                        }
-//
-//                        // ...
-//                    }
-//                });A
+    }
 
-        //-------------------------------- TODO FACEBOOK LOGIN --------------------------------------------------------
 
+    private void handleFacebookAccessToken(AccessToken token) {
+        Log.d("facebook", "handleFacebookAccessToken:" + token);
+
+        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+        mAuth.signInWithCredential(credential)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Log.d("facebook", "signInWithCredential:onComplete:" + task.isSuccessful());
+
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        if (!task.isSuccessful()) {
+                            Log.w("facebook", "signInWithCredential", task.getException());
+                            Toast.makeText(ActivityLogin.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+
+                        // ...
+                    }
+                });
     }
 
     @Override
@@ -225,6 +273,7 @@ public class ActivityLogin  extends AppCompatActivity {
         // Make sure that the loginButton hears the result from any
         // Activity that it triggered.
         loginButton.onActivityResult(requestCode, resultCode, data);
+        facebookCallBackManager.onActivityResult(requestCode,resultCode,data);
     }
 
     //-------------------------------------------LOGIN TWITTER-----------------------------------------------------

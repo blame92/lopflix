@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.controller.PeliculaController;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
-import com.example.nicolaslopezf.entregablefinal.model.WrapperPeliculas;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -40,10 +39,6 @@ public class FragmentRecycleGridFavoritas extends Fragment {
         recyclerViewPeliculas.setLayoutManager(linearLayoutManager);
 
         PeliculaController peliculasController = new PeliculaController();
-
-        //voy a  hacer que le pase un bundle cuando clikias el boton y eel metodo reciba el bundle y cree el metodo basado en eso
-        ArrayList<Pelicula> peliculasDelRecycle = peliculasController.obtenerFavoritasDeBD(getActivity());
-
 
 
         unAdapterPelicula = new AdapterRecyclePeliculasFavoritos(getActivity());

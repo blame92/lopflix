@@ -97,59 +97,28 @@ public class FragmentPeliculaDetallada extends Fragment {
                 flotingActionB.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        PeliculaController peliculaController = new PeliculaController();
-                        peliculaController.changeFavoriteStatus(getActivity(),pelicula,imdbID);
+                        final PeliculaController peliculaController = new PeliculaController();
 
-                        if(peliculaController.esFavorita(pelicula,getActivity())){
-
-                            // codigo que agrega una pelicula a la lista de favoritos de firbase
-                            FirebaseDatabase database = FirebaseDatabase.getInstance();
-                            final DatabaseReference databaseReference = database.getReference("users");
-                            FirebaseAuth mAuth;
-                            mAuth  = FirebaseAuth.getInstance();
-                            final FirebaseUser user = mAuth.getCurrentUser();
-                            ArrayList<String> container = new ArrayList<>();
-                            container.add(pelicula.getImdbID());
-                            container.add(pelicula.getTitle());
-                            databaseReference.child(user.getUid()).child("watchlist").child(pelicula.getImdbID()).setValue(pelicula);
-
-
-                            flotingActionB.setImageResource(R.mipmap.ic_favorite_full);
-                            flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
-
-                        }else{
-                            FirebaseDatabase database = FirebaseDatabase.getInstance();
-                            FirebaseAuth mAuth;
-                            mAuth  = FirebaseAuth.getInstance();
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            database.getReference("users").child(user.getUid()).child("watchlist").child(pelicula.getImdbID()).equalTo(pelicula.getImdbID()).addListenerForSingleValueEvent(
-                                    new ValueEventListener() {
-                                        @Override
-                                        public void onDataChange(DataSnapshot dataSnapshot) {
-
-                                            dataSnapshot.getRef().
-                                                    setValue(null);
-                                        }
-
-
-                                        @Override
-                                        public void onCancelled(DatabaseError databaseError) {
-                                            Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
-                                        }
-                                    });
-                            flotingActionB.setImageResource(R.mipmap.ic_favorite);
-                            flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.backgroundColor)));
-                        }
-
-                        Toast.makeText(getActivity(), pelicula.getTitle()+  " fue agregado a tu lista de favorito", Toast.LENGTH_SHORT).show();
+                        peliculaController.checkIfMovieIsInFirebase(pelicula, getActivity(), new ResultListener<Boolean>() {
+                            @Override
+                            public void finish(Boolean esFavorita) {
+                                if(!esFavorita){
+                                    peliculaController.addMovieToFirebaseFavorites(pelicula,getActivity());
+                                    Toast.makeText(getActivity(), pelicula.getTitle()+  " fue agregado a tu lista de favorito", Toast.LENGTH_SHORT).show();
+                                    flotingActionB.setImageResource(R.mipmap.ic_favorite_full);
+                                    flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
+                                }
+                                else{
+                                    peliculaController.removeMovieFromFirebaseFavorites(pelicula,getActivity());
+                                    Toast.makeText(getActivity(), pelicula.getTitle()+  " fue removida de tu lista de favorito", Toast.LENGTH_SHORT).show();
+                                    flotingActionB.setImageResource(R.mipmap.ic_favorite);
+                                    flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.backgroundColor)));
+                                }
+                            }
+                        });
                     }
                 });
-                if(peliculaController.esFavorita(pelicula,getActivity())){
-                    flotingActionB.setImageResource(R.mipmap.ic_favorite_full);
-                }else{
-                    flotingActionB.setImageResource(R.mipmap.ic_favorite);
-                    flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.backgroundColor)));
-                }
+
                 textViewNombre.setText(pelicula.getTitle() );
                 textViewActores.setText("Actors: \n" + pelicula.getActors());
                 textViewDescripcion.setText(pelicula.getPlot());

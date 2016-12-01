@@ -1,6 +1,7 @@
 package com.example.nicolaslopezf.entregablefinal.controller;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.example.nicolaslopezf.entregablefinal.dao.PeliculaDAO;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.ContainerMovieDB;
@@ -9,8 +10,16 @@ import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDB;
 import com.example.nicolaslopezf.entregablefinal.model.MovieDB.MovieDBTrailerContainer;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 import com.example.nicolaslopezf.entregablefinal.model.SerieDB.ContainerSerieDB;
+import com.example.nicolaslopezf.entregablefinal.model.Usuario.Usuario;
 import com.example.nicolaslopezf.entregablefinal.utils.ResultListener;
 import com.example.nicolaslopezf.entregablefinal.utils.TMDBHelper;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -20,9 +29,72 @@ import java.util.ArrayList;
 
 public class PeliculaController {
 
-    public ArrayList<Pelicula> obtenerFavoritasDeBD(Context context){
-        PeliculaDAO peliculaDAO = new PeliculaDAO(context);
-        return peliculaDAO.getAllPeliculasFavoritasFromDatabase();
+    public void checkIfMovieIsInFirebase(final Pelicula pelicula, Context context, final ResultListener<Boolean> listenerFromView){
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseAuth mAuth  = FirebaseAuth.getInstance();
+        FirebaseUser usuarioLogeado = mAuth.getCurrentUser();
+        database.getReference("users").child(usuarioLogeado.getUid()).child("watchlist").child(pelicula.getImdbID()).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                Boolean isInFirebase;
+
+                if(dataSnapshot.exists()){
+
+                    isInFirebase = true;
+                    listenerFromView.finish(isInFirebase);
+                }
+                else{
+                    isInFirebase = false;
+                    listenerFromView.finish(isInFirebase);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    public void addMovieToFirebaseFavorites(Pelicula pelicula, Context context){
+
+        // codigo que agrega una pelicula a la lista de favoritos de firbase
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference databaseReference = database.getReference("users");
+        FirebaseAuth mAuth;
+        mAuth  = FirebaseAuth.getInstance();
+        final FirebaseUser user = mAuth.getCurrentUser();
+        ArrayList<String> container = new ArrayList<>();
+        container.add(pelicula.getImdbID());
+        container.add(pelicula.getTitle());
+        databaseReference.child(user.getUid()).child("watchlist").child(pelicula.getImdbID()).setValue(pelicula);
+
+    }
+
+    public void removeMovieFromFirebaseFavorites(Pelicula pelicula, Context context){
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseAuth mAuth;
+        mAuth  = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+        database.getReference("users").child(user.getUid()).child("watchlist").child(pelicula.getImdbID()).equalTo(pelicula.getImdbID()).addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+
+                        dataSnapshot.getRef().
+                                setValue(null);
+                    }
+
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
+                    }
+                });
     }
 
 

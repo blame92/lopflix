@@ -1,4 +1,4 @@
-#Fri Nov 25 20:34:11 ART 2016
+#Wed Nov 30 22:08:36 ART 2016
 base.0=/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_32c7bf23ca9c6f08735942ef79b474ec53c79e93
 renamed.1=classes.dex
 renamed.0=classes2.dex
