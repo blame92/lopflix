@@ -100,6 +100,12 @@ public class ActivityLogin  extends AppCompatActivity {
         imageView8 = (ImageView) findViewById(R.id.activityLogin_imageView32);
         imageView9 = (ImageView) findViewById(R.id.activityLogin_imageView33);
 
+        FirebaseUser user = mAuth.getCurrentUser();
+        if (user != null){
+            Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+            startActivity(intent);
+        }
+
        // FACEBOOK//
         FacebookSdk.sdkInitialize(getApplicationContext());
         loginButtonFacebook = (LoginButton) findViewById(R.id.login_button_facebook);
@@ -201,15 +207,12 @@ public class ActivityLogin  extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                 handleTwitterSession(session);
 
-<<<<<<< HEAD
 //                FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
 //                logUserToFirebaseDatabase(usuarioAAgregar);
                 Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
 
 
                 startActivity(intent);
-=======
->>>>>>> master
 
             }
             @Override
@@ -218,7 +221,6 @@ public class ActivityLogin  extends AppCompatActivity {
             }
         });
 
-<<<<<<< HEAD
     }
 
 
@@ -245,7 +247,6 @@ public class ActivityLogin  extends AppCompatActivity {
                     }
                 });
 
-=======
 //
 //        String email = "prueba3@prueba.com";
 //        String pas = "1235678";
@@ -269,7 +270,7 @@ public class ActivityLogin  extends AppCompatActivity {
 //                });
 
         //-------------------------------- TODO FACEBOOK LOGIN --------------------------------------------------------
->>>>>>> master
+
 
     }
 

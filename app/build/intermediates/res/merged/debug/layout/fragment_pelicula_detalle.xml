@@ -96,8 +96,6 @@
         </RelativeLayout>
     </LinearLayout>
 
-
-</android.support.design.widget.CoordinatorLayout>
     <com.github.clans.fab.FloatingActionButton
         android:id="@+id/buttonFav"
         layout_anchor="@id/card_view"
@@ -109,4 +107,6 @@
         fab:fab_colorNormal="#FFF8E1"
 
         />
+</android.support.design.widget.CoordinatorLayout>
+
 </ScrollView>

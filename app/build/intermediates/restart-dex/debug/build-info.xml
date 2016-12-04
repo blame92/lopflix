@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="22"
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="1511623061646"
+    timestamp="2894198390808"
     token="494775607350069868"
-    verifier="COMPATIBLE" >
+    verifier="MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
         duration="0" />
     <task
         name="instant-run-dex"
-        duration="4" />
+        duration="0" />
     <task
         name="instant-run-transform"
         duration="0" />
@@ -24,67 +23,15 @@
         duration="0" />
 
     <artifact
-        location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="1012438796596"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="2894198390808"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="1286133498290"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="1511623061646"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
 
 </instant-run>
-=======
-<instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
-    density="xxxhdpi"
-    format="8"
-    plugin-version="2.2.2"
-    timestamp="6798057692140"
-    token="-1653956766172365964"
-    verifier="FULL_BUILD_REQUESTED" >
-
-    <task
-        name="javac"
-        duration="1662" />
-    <task
-        name="instant-run-dex"
-        duration="0" />
-    <task
-        name="instant-run-transform"
-        duration="2397" />
-    <task
-        name="verifier"
-        duration="675" />
-
-    <artifact
-        location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
-
-    <build
-        timestamp="6798057692140"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
-    </build>
-
-</instant-run>
->>>>>>> master

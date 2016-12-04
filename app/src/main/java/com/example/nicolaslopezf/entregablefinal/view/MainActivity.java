@@ -1,5 +1,6 @@
 package com.example.nicolaslopezf.entregablefinal.view;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -92,23 +93,26 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-            Toast.makeText(MainActivity.this, item.toString(), Toast.LENGTH_SHORT).show();
-            unFragmentManager = getSupportFragmentManager();
-            FragmentViewPager fragmentViewPager = new FragmentViewPager();
-            FragmentRecyclerSoloImagen fragmentRecyclerSoloImagen = new FragmentRecyclerSoloImagen();
-            Bundle bundle = new Bundle();
-            bundle.putString("genero", item.toString());
-            fragmentRecyclerSoloImagen.setArguments(bundle);
+            if (item.toString().equals("Settings")){
+                Intent intent = new Intent(MainActivity.this, UserSettingsActivity.class);
+                startActivity(intent);
+            }
+            else{
+                Toast.makeText(MainActivity.this, item.toString(), Toast.LENGTH_SHORT).show();
+                unFragmentManager = getSupportFragmentManager();
+                FragmentViewPager fragmentViewPager = new FragmentViewPager();
+                FragmentRecyclerSoloImagen fragmentRecyclerSoloImagen = new FragmentRecyclerSoloImagen();
+                Bundle bundle = new Bundle();
+                bundle.putString("genero", item.toString());
+                fragmentRecyclerSoloImagen.setArguments(bundle);
 
-            FragmentTransaction unaTransaction = unFragmentManager.beginTransaction();
-            unaTransaction.replace(R.id.acaVaElFragmentPelicula, fragmentRecyclerSoloImagen).addToBackStack(null);
+                FragmentTransaction unaTransaction = unFragmentManager.beginTransaction();
+                unaTransaction.replace(R.id.acaVaElFragmentPelicula, fragmentRecyclerSoloImagen).addToBackStack(null);
+                unaTransaction.commit();
+            }
 
-
-            unaTransaction.commit();
 
             drawerLayout.closeDrawers();
-
-
             return true;
         }
     }

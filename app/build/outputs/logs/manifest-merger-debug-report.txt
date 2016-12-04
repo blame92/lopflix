@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:2:1-47:12
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:3:5-56
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
@@ -14,7 +14,6 @@ ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-<<<<<<< HEAD
 ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:21:5-67
@@ -26,7 +25,7 @@ MERGED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Deskt
 	android:name
 		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:6:5-44:19
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:6:5-46:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:28:5-38:19
 MERGED from [com.android.support:support-v4:25.0.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -58,49 +57,6 @@ MERGED from [com.twitter.sdk.android:twitter-core:2.2.0] /Users/santiagoiraola/D
 MERGED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:27:5-35:19
 MERGED from [com.android.support:palette-v7:24.1.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.1.1/AndroidManifest.xml:22:5-23:19
 MERGED from [com.github.clans:fab:1.6.4] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/AndroidManifest.xml:12:5-20
-=======
-ADDED from C:\loflixOficial\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\AndroidManifest.xml:21:5-67
-MERGED from [com.twitter.sdk.android:tweet-composer:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-composer\2.2.0\AndroidManifest.xml:25:5-67
-MERGED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:25:5-67
-MERGED from [com.twitter.sdk.android:twitter-core:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter-core\2.2.0\AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\loflixOficial\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:25:5-67
-	android:name
-		ADDED from C:\loflixOficial\app\src\main\AndroidManifest.xml:4:22-64
-application
-ADDED from C:\loflixOficial\app\src\main\AndroidManifest.xml:6:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.17.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.17.0\AndroidManifest.xml:28:5-38:19
-MERGED from [com.android.support:customtabs:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\customtabs\25.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:24.2.1] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-auth:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-auth-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-core:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.4.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\AndroidManifest.xml:30:5-59:19
-MERGED from [com.alexzh:circleimageview:1.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.alexzh\circleimageview\1.2.0\AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:appcompat-v7:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:cardview-v7:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.twitter.sdk.android:twitter:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter\2.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.twitter.sdk.android:tweet-composer:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-composer\2.2.0\AndroidManifest.xml:27:5-37:19
-MERGED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:27:5-35:19
-MERGED from [com.twitter.sdk.android:twitter-core:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter-core\2.2.0\AndroidManifest.xml:27:5-40:19
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\loflixOficial\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.firebase:firebase-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\AndroidManifest.xml:25:5-20
->>>>>>> master
 	android:label
 		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:9:9-41
 	android:supportsRtl
@@ -169,20 +125,23 @@ data
 ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:37:17-75
 	android:scheme
 		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:37:23-72
+activity#com.example.nicolaslopezf.entregablefinal.view.UserSettingsActivity
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:41:10-73
+	android:name
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:41:20-61
 meta-data#io.fabric.ApiKey
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:40:9-42:72
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:42:9-44:72
 	android:value
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:42:13-69
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:44:13-69
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:41:13-44
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:43:13-44
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:43:9-107
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:45:9-107
 	android:value
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:43:66-105
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:45:66-105
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:43:20-65
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:45:20-65
 uses-sdk
-<<<<<<< HEAD
 INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:support-v4:25.0.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
@@ -223,46 +182,6 @@ MERGED from [com.android.support:palette-v7:24.1.1] /Users/santiagoiraola/Deskto
 MERGED from [com.github.clans:fab:1.6.4] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/AndroidManifest.xml:8:5-10:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:25.0.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:23:9-51
-=======
-INJECTED from C:\loflixOficial\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.facebook.android:facebook-android-sdk:4.17.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.17.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:customtabs:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\customtabs\25.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:24.2.1] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-auth:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-module:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-core:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.4.0\AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-database:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-database-connection:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.alexzh:circleimageview:1.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.alexzh\circleimageview\1.2.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:cardview-v7:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.twitter.sdk.android:twitter:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter\2.2.0\AndroidManifest.xml:23:5-44
-MERGED from [com.twitter.sdk.android:tweet-composer:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-composer\2.2.0\AndroidManifest.xml:23:5-44
-MERGED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:23:5-44
-MERGED from [com.twitter.sdk.android:twitter-core:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter-core\2.2.0\AndroidManifest.xml:23:5-44
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\loflixOficial\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:23:5-43
-MERGED from [com.google.firebase:firebase-storage:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-storage-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\AndroidManifest.xml:21:5-23:58
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.0.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:23:9-75
->>>>>>> master
 	android:targetSdkVersion
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
@@ -272,7 +191,6 @@ MERGED from [com.android.support:support-compat:25.0.0] C:\loflixOficial\app\bui
 activity#com.facebook.CustomTabMainActivity
 ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:37:9-71
 	android:name
-<<<<<<< HEAD
 		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:37:19-68
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:20:9-22:45
@@ -298,9 +216,6 @@ ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/santiagoiraola/Des
 		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:11:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:9:13-58
-=======
-		ADDED from [com.facebook.android:facebook-android-sdk:4.17.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.17.0\AndroidManifest.xml:37:19-68
->>>>>>> master
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:22:5-79
@@ -406,25 +321,7 @@ ADDED from [com.twitter.sdk.android:tweet-composer:2.2.0] /Users/santiagoiraola/
 	android:exported
 		ADDED from [com.twitter.sdk.android:tweet-composer:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/2.2.0/AndroidManifest.xml:36:13-37
 	android:name
-<<<<<<< HEAD
 		ADDED from [com.twitter.sdk.android:tweet-composer:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/2.2.0/AndroidManifest.xml:34:13-84
-=======
-		ADDED from [com.twitter.sdk.android:tweet-composer:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-composer\2.2.0\AndroidManifest.xml:34:13-84
-activity#com.twitter.sdk.android.tweetui.PlayerActivity
-ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:28:9-31:49
-	android:configChanges
-		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:30:13-74
-	android:theme
-		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:31:13-46
-	android:name
-		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:29:13-74
-activity#com.twitter.sdk.android.tweetui.GalleryActivity
-ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:32:9-34:49
-	android:theme
-		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:34:13-46
-	android:name
-		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.2.0\AndroidManifest.xml:33:13-75
->>>>>>> master
 activity#com.twitter.sdk.android.core.identity.OAuthActivity
 ADDED from [com.twitter.sdk.android:twitter-core:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/AndroidManifest.xml:28:9-32:40
 	android:excludeFromRecents
@@ -448,7 +345,6 @@ ADDED from [com.twitter.sdk.android:twitter-core:2.2.0] /Users/santiagoiraola/De
 	android:icon
 		ADDED from [com.twitter.sdk.android:twitter-core:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/AndroidManifest.xml:38:13-53
 	android:name
-<<<<<<< HEAD
 		ADDED from [com.twitter.sdk.android:twitter-core:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/AndroidManifest.xml:34:13-84
 activity#com.twitter.sdk.android.tweetui.PlayerActivity
 ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:28:9-31:49
@@ -464,30 +360,3 @@ ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Deskto
 		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:34:13-46
 	android:name
 		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:33:13-75
-=======
-		ADDED from [com.twitter.sdk.android:twitter-core:2.2.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter-core\2.2.0\AndroidManifest.xml:34:13-84
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:22:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:21:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:20:19-85
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\AndroidManifest.xml:7:9-11:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\AndroidManifest.xml:8:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\AndroidManifest.xml:10:13-37
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\AndroidManifest.xml:11:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\AndroidManifest.xml:9:13-58
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:23:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\loflixOficial\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:22:13-58
->>>>>>> master
