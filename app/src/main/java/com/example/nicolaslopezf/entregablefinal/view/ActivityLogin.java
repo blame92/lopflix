@@ -201,12 +201,15 @@ public class ActivityLogin  extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                 handleTwitterSession(session);
 
+<<<<<<< HEAD
 //                FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
 //                logUserToFirebaseDatabase(usuarioAAgregar);
                 Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
 
 
                 startActivity(intent);
+=======
+>>>>>>> master
 
             }
             @Override
@@ -215,6 +218,7 @@ public class ActivityLogin  extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
     }
 
 
@@ -241,6 +245,31 @@ public class ActivityLogin  extends AppCompatActivity {
                     }
                 });
 
+=======
+//
+//        String email = "prueba3@prueba.com";
+//        String pas = "1235678";
+//
+//        mAuth.createUserWithEmailAndPassword(email, pas)
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        Log.d("twitter", "createUserWithEmail:onComplete:" + task.isSuccessful());
+//
+//                        // If sign in fails, display a message to the user. If sign in succeeds
+//                        // the auth state listener will be notified and logic to handle the
+//                        // signed in user can be handled in the listener.
+//                        if (!task.isSuccessful()) {
+//                            Toast.makeText(ActivityLogin.this, "fallo",
+//                                    Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        // ...
+//                    }
+//                });
+
+        //-------------------------------- TODO FACEBOOK LOGIN --------------------------------------------------------
+>>>>>>> master
 
     }
 
@@ -310,6 +339,9 @@ public class ActivityLogin  extends AppCompatActivity {
                         FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
                         logUserToFirebaseDatabase(usuarioAAgregar);
 
+                        Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+                        startActivity(intent);
+
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
@@ -327,8 +359,6 @@ public class ActivityLogin  extends AppCompatActivity {
     public void loginAsGuest(View view){
         Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
         startActivity(intent);
-
-
     }
 
 

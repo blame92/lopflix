@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="22"
@@ -49,3 +50,41 @@
     </build>
 
 </instant-run>
+=======
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxxhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="6798057692140"
+    token="-1653956766172365964"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1662" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="2397" />
+    <task
+        name="verifier"
+        duration="675" />
+
+    <artifact
+        location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="6798057692140"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\loflixOficial\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
+>>>>>>> master
