@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="xxhdpi"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="2894198390808"
+    timestamp="23679589921736"
     token="494775607350069868"
-    verifier="MANIFEST_FILE_CHANGE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -27,8 +27,8 @@
         type="MAIN" />
 
     <build
-        timestamp="2894198390808"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="23679589921736"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

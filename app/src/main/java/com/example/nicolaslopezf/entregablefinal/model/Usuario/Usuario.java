@@ -16,8 +16,12 @@ public class Usuario {
     private String email;
     private String edad;
     private String descripcion;
+    private Double longitudeCoordinate;
+    private Double latitudeCoordinate;
+
 //    private ArrayList<String> amigos;
 //    private ArrayList<String> watchlist;
+
 
     public Usuario() {
     }
@@ -89,5 +93,22 @@ public class Usuario {
 
     public void setEdad(String edad) {
         this.edad = edad;
+    }
+
+    public void setLongitudeCoordinate(Double longitudeCoordinate) {
+        this.longitudeCoordinate = longitudeCoordinate;
+    }
+
+    public void setLatitudeCoordinate(Double latitudeCoordinate) {
+        this.latitudeCoordinate = latitudeCoordinate;
+    }
+
+    public Double getLongitudeCoordinate() {
+
+        return longitudeCoordinate;
+    }
+
+    public Double getLatitudeCoordinate() {
+        return latitudeCoordinate;
     }
 }

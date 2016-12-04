@@ -124,6 +124,10 @@
         "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/drawable-xhdpi-v4/tw__ic_video_pause.png"
     },
     {
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/powered_by_google_light.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/drawable-xhdpi-v4/powered_by_google_light.png"
+    },
+    {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00007.png",
         "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00007.png"
     },
@@ -306,6 +310,10 @@
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00056.png",
         "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00056.png"
+    },
+    {
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/places_ic_search.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/drawable-xhdpi-v4/places_ic_search.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00050.png",
@@ -536,6 +544,10 @@
         "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00003.png"
     },
     {
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/powered_by_google_dark.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/drawable-xhdpi-v4/powered_by_google_dark.png"
+    },
+    {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00020.png",
         "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/drawable-xhdpi-v4/tw__heart_animation_detail_60fps_00020.png"
     },
@@ -642,6 +654,10 @@
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tw__action_heart_on_default.png",
         "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/drawable-xhdpi-v4/tw__action_heart_on_default.png"
+    },
+    {
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/places_ic_clear.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/drawable-xhdpi-v4/places_ic_clear.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png",

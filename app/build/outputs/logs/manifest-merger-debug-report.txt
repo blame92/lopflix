@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:2:1-49:12
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:2:1-64:12
 	package
 		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:3:5-56
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:21:5-67
@@ -22,10 +22,27 @@ MERGED from [com.twitter.sdk.android:tweet-composer:2.2.0] /Users/santiagoiraola
 MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/AndroidManifest.xml:25:5-67
 MERGED from [com.twitter.sdk.android:twitter-core:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/AndroidManifest.xml:25:5-67
 MERGED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/AndroidManifest.xml:21:5-66
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:6:5-95
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:20:5-79
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:7:5-97
+	android:name
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:8:5-95
+	android:name
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:8:22-76
 application
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:6:5-46:19
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:10:5-62:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:28:5-38:19
 MERGED from [com.android.support:support-v4:25.0.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -57,90 +74,111 @@ MERGED from [com.twitter.sdk.android:twitter-core:2.2.0] /Users/santiagoiraola/D
 MERGED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:27:5-35:19
 MERGED from [com.android.support:palette-v7:24.1.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.1.1/AndroidManifest.xml:22:5-23:19
 MERGED from [com.github.clans:fab:1.6.4] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/AndroidManifest.xml:12:5-20
+MERGED from [com.google.android.gms:play-services-location:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-places:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/AndroidManifest.xml:27:5-20
+MERGED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:11:5-21:19
 	android:label
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:13:9-41
 	android:supportsRtl
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:14:9-35
 	android:allowBackup
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:11:9-35
 	android:icon
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:8:9-47
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:12:9-47
 	android:theme
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:11:9-59
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:15:9-59
 activity#com.example.nicolaslopezf.entregablefinal.view.ActivityLogin
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:13:9-18:20
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:13:19-53
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:16:19-53
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:14:13-17:29
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.example.nicolaslopezf.entregablefinal.view.MainActivity
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:19:9-23:20
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:23:9-26:61
 	android:screenOrientation
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:20:13-49
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:26:13-49
 	android:configChanges
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:21:13-74
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:25:13-74
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:19:19-52
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:24:13-46
 activity#com.facebook.FacebookActivity
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:25:9-28:48
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:27:9-30:48
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:28:13-45
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:30:13-45
 	android:configChanges
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:26:13-114
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:29:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:25:19-63
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:28:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:30:9-39:20
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:31:9-42:20
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:33:9-36:20
 	android:exported
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:32:13-36
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:31:13-58
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:32:13-58
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:33:13-38:29
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:34:13-41:29
 action#android.intent.action.VIEW
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:34:17-69
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:35:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:35:17-76
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:37:17-76
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:35:27-73
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:37:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:36:17-78
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:38:17-78
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:36:27-75
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:38:27-75
 data
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:37:17-75
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:40:17-75
 	android:scheme
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:37:23-72
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:40:23-72
 activity#com.example.nicolaslopezf.entregablefinal.view.UserSettingsActivity
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:41:10-73
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:44:9-63
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:41:20-61
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:44:19-60
 meta-data#io.fabric.ApiKey
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:42:9-44:72
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:46:9-48:72
 	android:value
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:44:13-69
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:48:13-69
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:43:13-44
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:47:13-44
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:45:9-107
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:49:9-51:55
 	android:value
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:45:66-105
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:51:13-52
 	android:name
-		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:45:20-65
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:50:13-58
+meta-data#com.google.android.gms.version
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:52:9-54:69
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:54:13-66
+	android:name
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:53:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:55:9-57:71
+	android:value
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:57:13-68
+	android:name
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:56:13-58
+activity#com.example.nicolaslopezf.entregablefinal.view.GoogleMapsActivity
+ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:59:9-61:20
+	android:name
+		ADDED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml:59:19-58
 uses-sdk
 INJECTED from /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/AndroidManifest.xml:24:5-26:41
@@ -180,6 +218,10 @@ MERGED from [com.google.firebase:firebase-storage:9.4.0] /Users/santiagoiraola/D
 MERGED from [com.google.firebase:firebase-storage-common:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:palette-v7:24.1.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.1.1/AndroidManifest.xml:20:5-43
 MERGED from [com.github.clans:fab:1.6.4] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.android.gms:play-services-location:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-places:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/AndroidManifest.xml:26:5-42
+MERGED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:25.0.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
@@ -200,12 +242,6 @@ ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/santiagoirao
 		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:20:19-85
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:23:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:22:13-58
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:7:9-11:39
 	android:authorities
@@ -216,12 +252,6 @@ ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/santiagoiraola/Des
 		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:11:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:9:13-58
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:20:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:22:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:24:5-67
@@ -360,3 +390,25 @@ ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Deskto
 		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:34:13-46
 	android:name
 		ADDED from [com.twitter.sdk.android:tweet-ui:2.2.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/AndroidManifest.xml:33:13-75
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/AndroidManifest.xml:23:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:9.4.0] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/AndroidManifest.xml:24:8-31
+provider#android.support.v4.content.FileProvider
+ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:12:9-20:20
+	android:authorities
+		ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:14:13-80
+	android:grantUriPermissions
+		ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:16:13-47
+	android:exported
+		ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:13:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:17:13-19:53
+	android:resource
+		ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:19:17-50
+	android:name
+		ADDED from [com.github.jkwiecien:EasyImage:1.3.1] /Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/AndroidManifest.xml:18:17-67

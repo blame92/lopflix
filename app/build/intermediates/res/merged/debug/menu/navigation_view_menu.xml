@@ -31,5 +31,13 @@
             android:title="Settings"/>
 
     </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_logOut">
+
+        <item
+            android:id="@+id/navigation_menu_logOut"
+            android:title="Log Out"/>
+
+    </group>
 
 </menu>

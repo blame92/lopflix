@@ -811,8 +811,46 @@
                     "startLine": 53,
                     "startColumn": 4,
                     "startOffset": 5668,
+                    "endColumn": 104,
+                    "endOffset": 5768
+                },
+                "from": {
+                    "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/values-fa/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 281,
+                        "endColumn": 104,
+                        "endOffset": 381
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 5773,
+                    "endColumn": 94,
+                    "endOffset": 5863
+                },
+                "from": {
+                    "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/values-fa/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 386,
+                        "endColumn": 94,
+                        "endOffset": 476
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 5868,
                     "endColumn": 80,
-                    "endOffset": 5744
+                    "endOffset": 5944
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-fa/values-fa.xml",
@@ -827,11 +865,11 @@
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 5749,
+                    "startOffset": 5949,
                     "endColumn": 100,
-                    "endOffset": 5845
+                    "endOffset": 6045
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-fa/values-fa.xml",
@@ -846,11 +884,11 @@
             },
             {
                 "to": {
-                    "startLine": 55,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5850,
+                    "startOffset": 6050,
                     "endColumn": 50,
-                    "endOffset": 5896
+                    "endOffset": 6096
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/res/values-fa/values-fa.xml",
@@ -865,11 +903,11 @@
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5901,
+                    "startOffset": 6101,
                     "endColumn": 75,
-                    "endOffset": 5972
+                    "endOffset": 6172
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/2.2.0/res/values-fa/values-fa.xml",
@@ -884,11 +922,11 @@
             },
             {
                 "to": {
-                    "startLine": 57,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5977,
+                    "startOffset": 6177,
                     "endColumn": 57,
-                    "endOffset": 6030
+                    "endOffset": 6230
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -903,11 +941,11 @@
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 6035,
+                    "startOffset": 6235,
                     "endColumn": 43,
-                    "endOffset": 6074
+                    "endOffset": 6274
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/2.2.0/res/values-fa/values-fa.xml",
@@ -922,11 +960,11 @@
             },
             {
                 "to": {
-                    "startLine": 59,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 6079,
+                    "startOffset": 6279,
                     "endColumn": 56,
-                    "endOffset": 6131
+                    "endOffset": 6331
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -941,11 +979,11 @@
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 6136,
+                    "startOffset": 6336,
                     "endColumn": 55,
-                    "endOffset": 6187
+                    "endOffset": 6387
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -960,11 +998,11 @@
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6192,
+                    "startOffset": 6392,
                     "endColumn": 59,
-                    "endOffset": 6247
+                    "endOffset": 6447
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -979,11 +1017,11 @@
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 6252,
+                    "startOffset": 6452,
                     "endColumn": 60,
-                    "endOffset": 6308
+                    "endOffset": 6508
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/res/values-fa/values-fa.xml",
@@ -998,11 +1036,11 @@
             },
             {
                 "to": {
-                    "startLine": 63,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6313,
+                    "startOffset": 6513,
                     "endColumn": 51,
-                    "endOffset": 6360
+                    "endOffset": 6560
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/2.2.0/res/values-fa/values-fa.xml",
@@ -1017,11 +1055,11 @@
             },
             {
                 "to": {
-                    "startLine": 64,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6365,
+                    "startOffset": 6565,
                     "endColumn": 56,
-                    "endOffset": 6417
+                    "endOffset": 6617
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/res/values-fa/values-fa.xml",
@@ -1036,11 +1074,11 @@
             },
             {
                 "to": {
-                    "startLine": 65,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6422,
+                    "startOffset": 6622,
                     "endColumn": 47,
-                    "endOffset": 6465
+                    "endOffset": 6665
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1055,11 +1093,11 @@
             },
             {
                 "to": {
-                    "startLine": 66,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6470,
+                    "startOffset": 6670,
                     "endColumn": 40,
-                    "endOffset": 6506
+                    "endOffset": 6706
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1074,11 +1112,11 @@
             },
             {
                 "to": {
-                    "startLine": 67,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 6511,
+                    "startOffset": 6711,
                     "endColumn": 48,
-                    "endOffset": 6555
+                    "endOffset": 6755
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/2.2.0/res/values-fa/values-fa.xml",
@@ -1093,11 +1131,11 @@
             },
             {
                 "to": {
-                    "startLine": 68,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 6560,
+                    "startOffset": 6760,
                     "endColumn": 63,
-                    "endOffset": 6619
+                    "endOffset": 6819
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1112,11 +1150,11 @@
             },
             {
                 "to": {
-                    "startLine": 69,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 6624,
+                    "startOffset": 6824,
                     "endColumn": 64,
-                    "endOffset": 6684
+                    "endOffset": 6884
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1131,11 +1169,11 @@
             },
             {
                 "to": {
-                    "startLine": 70,
+                    "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 6689,
+                    "startOffset": 6889,
                     "endColumn": 47,
-                    "endOffset": 6732
+                    "endOffset": 6932
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1150,11 +1188,11 @@
             },
             {
                 "to": {
-                    "startLine": 71,
+                    "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 6737,
+                    "startOffset": 6937,
                     "endColumn": 74,
-                    "endOffset": 6807
+                    "endOffset": 7007
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1169,11 +1207,11 @@
             },
             {
                 "to": {
-                    "startLine": 72,
+                    "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 6812,
+                    "startOffset": 7012,
                     "endColumn": 119,
-                    "endOffset": 6927
+                    "endOffset": 7127
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1188,11 +1226,11 @@
             },
             {
                 "to": {
-                    "startLine": 73,
+                    "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 6932,
+                    "startOffset": 7132,
                     "endColumn": 284,
-                    "endOffset": 7212
+                    "endOffset": 7412
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/res/values-fa/values-fa.xml",
@@ -1207,11 +1245,11 @@
             },
             {
                 "to": {
-                    "startLine": 74,
+                    "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 7217,
+                    "startOffset": 7417,
                     "endColumn": 86,
-                    "endOffset": 7299
+                    "endOffset": 7499
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/res/values-fa/values-fa.xml",
@@ -1226,11 +1264,11 @@
             },
             {
                 "to": {
-                    "startLine": 75,
+                    "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 7304,
+                    "startOffset": 7504,
                     "endColumn": 77,
-                    "endOffset": 7377
+                    "endOffset": 7577
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1245,11 +1283,11 @@
             },
             {
                 "to": {
-                    "startLine": 76,
+                    "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 7382,
+                    "startOffset": 7582,
                     "endColumn": 65,
-                    "endOffset": 7443
+                    "endOffset": 7643
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1264,11 +1302,11 @@
             },
             {
                 "to": {
-                    "startLine": 77,
+                    "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 7448,
+                    "startOffset": 7648,
                     "endColumn": 75,
-                    "endOffset": 7519
+                    "endOffset": 7719
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",
@@ -1283,11 +1321,11 @@
             },
             {
                 "to": {
-                    "startLine": 78,
+                    "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 7524,
+                    "startOffset": 7724,
                     "endColumn": 69,
-                    "endOffset": 7589
+                    "endOffset": 7789
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/res/values-fa/values-fa.xml",

@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.4.0_2723585c720dcc5dab3eecb784a3089aeddf13ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -27,15 +36,6 @@
         revision="24.0.2"
         sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_d5470395195c9d5148194ded8495d23cea2549b0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_a2a77b5dc53cc7c0acbd8f0ef7df8b4e97e4196f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,15 +66,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.1_b63e76dd3fc4ee66f4ba78d80442cd6140686076/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -84,30 +75,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="c890494cd9d88a077255fb4400792f98782db71d">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7f9284781553d4e50938fe91d756b9a9de514228/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter/2.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="2b7e936ca11ae0588600beb7388553bda26d7e66">
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.twitter.sdk.android-twitter-2.2.0_2851b894e245c306b8cfdbba86fa76b12a1e1277/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_e89cd4152cb75dfa688446c1562ce250ca03bb98/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -129,15 +102,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.4.0_03fac1c4190f47f5e35e71a464b1124fde661749/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/2.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -153,24 +117,6 @@
         revision="24.0.2"
         sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.4.0_916c3c3cdef1e967706675d9c5ce534500afd5d2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_1bfb2e1b6529796f584ef1bd6c3f18c959195757/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_950f28c18c29451646e5a47f7736992b41b4521d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -192,12 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/jars/classes.jar"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="2a3224154b36aa5bb941f20d1625ba1fb20aa3a7">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.twitter.sdk.android-twitter-core-2.2.0_5ded1addd3ee6f3da6455f569cdaf500bdf394b6/classes.dex" />
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.4.0_f4828650061836819d4b304c392f6c74e3d1e260/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -210,39 +156,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Library/Android/sdk/build-tools/24.0.2/renderscript/lib/renderscript-v8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/renderscript-v8_328338f861ae43f5bc4ccb54a9e161e8bb38bf10/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="8a372c4191f80489770a231f7be4820b204b886a">
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.0_b081991ffd13e674f8a40a45a76ed33823b985e2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.alexzh/circleimageview/1.2.0/jars/libs/nineoldandroid-library-2.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="de28e826c3cdeff64a297816a4f95c50d7aa644b">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/nineoldandroid-library-2.4.0_5bc7dc4ae25e36278b8f42b2df3c87cee2fedef9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.4.0_d721551509a234fa8eaad1b93392771b874de7f1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -273,15 +192,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_49bff91d15d4b904e9b0b83c4a613dcb3f26e835/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
         jumboMode="true"
         optimize="true"
@@ -291,30 +201,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.4.0_a639e77f93283e926429ded72f1ad93892f21b8f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_f7269aa3ad45f86b85e8b0534bc4320b3bd04e22/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.fabric.sdk.android-fabric-1.3.14_767e88cf9296cbe04e5269e95f68988f85f898c3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -354,24 +246,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_86cbd60435c3c3e436d7dbfd3afb7ee000a58f30/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.alexzh/circleimageview/1.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f4cde41cc3e40c2c25b0173ae54f58a516d5ad9f">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.alexzh-circleimageview-1.2.0_efbd6cab0607aa18ed5001ae37a01428e23f0467/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -396,6 +270,213 @@
         revision="24.0.2"
         sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_4c898a07a2c73f0ede256e6e6918c1954408a7b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e35002351f2d415093a9b564652d4b56be6a0593">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.4.0_859141ff5a011cd470f7a00af9d9ef4134f252d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="017146858ecb2e8b5c536540b88a47f97189c89a">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_32c7bf23ca9c6f08735942ef79b474ec53c79e93/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-25.0.0_fe9666efab11dbfd962d52a24d7d85b0993c3412/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_dde6d17d6b2e84f660a55a33e9ce243fe7041ac4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_a383206fd13680c14f76f65f72219f57e7879637/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_3d87867a07e092eac68a3b1b1217cb4f0b9cea43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_a2a77b5dc53cc7c0acbd8f0ef7df8b4e97e4196f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.1_b63e76dd3fc4ee66f4ba78d80442cd6140686076/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="50b8da45cfa8c1a0dd7943f6fb476bac563650b2">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7f9284781553d4e50938fe91d756b9a9de514228/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_e89cd4152cb75dfa688446c1562ce250ca03bb98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.jkwiecien/EasyImage/1.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="36bd772291bbb9201113b4988472e3dd95647bf2">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.jkwiecien-EasyImage-1.3.1_64b1a56091a455b7a2ceb2b81903652c7bf25af4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.4.0_03fac1c4190f47f5e35e71a464b1124fde661749/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_1bfb2e1b6529796f584ef1bd6c3f18c959195757/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_950f28c18c29451646e5a47f7736992b41b4521d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/2.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2a3224154b36aa5bb941f20d1625ba1fb20aa3a7">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.twitter.sdk.android-twitter-core-2.2.0_5ded1addd3ee6f3da6455f569cdaf500bdf394b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Library/Android/sdk/build-tools/24.0.2/renderscript/lib/renderscript-v8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/renderscript-v8_328338f861ae43f5bc4ccb54a9e161e8bb38bf10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.alexzh/circleimageview/1.2.0/jars/libs/nineoldandroid-library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="de28e826c3cdeff64a297816a4f95c50d7aa644b">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/nineoldandroid-library-2.4.0_5bc7dc4ae25e36278b8f42b2df3c87cee2fedef9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.4.0_d721551509a234fa8eaad1b93392771b874de7f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_49bff91d15d4b904e9b0b83c4a613dcb3f26e835/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.4.0_a639e77f93283e926429ded72f1ad93892f21b8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.fabric.sdk.android-fabric-1.3.14_767e88cf9296cbe04e5269e95f68988f85f898c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_86cbd60435c3c3e436d7dbfd3afb7ee000a58f30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.alexzh/circleimageview/1.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f4cde41cc3e40c2c25b0173ae54f58a516d5ad9f">
+        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.alexzh-circleimageview-1.2.0_efbd6cab0607aa18ed5001ae37a01428e23f0467/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -444,24 +525,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="112a7c8ccfb0653387ebeebfc5f2630b0ac0312d">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_32c7bf23ca9c6f08735942ef79b474ec53c79e93/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-25.0.0_fe9666efab11dbfd962d52a24d7d85b0993c3412/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -477,33 +540,6 @@
         revision="24.0.2"
         sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
         <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_e0eb07fe7d4aa0e4ad939b97c4f96ea8061b5f91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_dde6d17d6b2e84f660a55a33e9ce243fe7041ac4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_a383206fd13680c14f76f65f72219f57e7879637/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/santiagoiraola/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_3d87867a07e092eac68a3b1b1217cb4f0b9cea43/classes.dex" />
     </item>
 
 </items>

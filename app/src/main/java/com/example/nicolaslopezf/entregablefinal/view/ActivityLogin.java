@@ -179,7 +179,9 @@ public class ActivityLogin  extends AppCompatActivity {
                     // User is signed in
                     Log.d("twitter", "onAuthStateChanged:signed_in:" + user.getUid());
                     try{
-                        logUserToFirebaseDatabase(user);
+                        logUserToFirebaseDatabase(mAuth.getCurrentUser());
+                        Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+                        startActivity(intent);
                     }
                     catch (Exception e){
                         e.getStackTrace();
@@ -206,9 +208,6 @@ public class ActivityLogin  extends AppCompatActivity {
                 String msg = "@" + session.getUserName() + " logged in! (#" + session.getUserId() + ")";
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                 handleTwitterSession(session);
-
-//                FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
-//                logUserToFirebaseDatabase(usuarioAAgregar);
                 Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
 
 
@@ -234,6 +233,7 @@ public class ActivityLogin  extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d("facebook", "signInWithCredential:onComplete:" + task.isSuccessful());
 
+
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
@@ -242,7 +242,6 @@ public class ActivityLogin  extends AppCompatActivity {
                             Toast.makeText(ActivityLogin.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                         }
-
                         // ...
                     }
                 });
@@ -338,10 +337,10 @@ public class ActivityLogin  extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d("twitter", "signInWithCredential:onComplete:" + task.isSuccessful());
                         FirebaseUser usuarioAAgregar = mAuth.getCurrentUser();
-                        logUserToFirebaseDatabase(usuarioAAgregar);
 
-                        Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
-                        startActivity(intent);
+//                        logUserToFirebaseDatabase(usuarioAAgregar);
+//                        Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+//                        startActivity(intent);
 
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
@@ -365,10 +364,11 @@ public class ActivityLogin  extends AppCompatActivity {
 
     public void logUserToFirebaseDatabase(final FirebaseUser user){
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+
 
         final String id = user.getUid();
         Log.d("facebookuser1",id);
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
         database.getReference("users").child(id).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override

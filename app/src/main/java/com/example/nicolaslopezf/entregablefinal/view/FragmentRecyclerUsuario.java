@@ -1,5 +1,6 @@
 package com.example.nicolaslopezf.entregablefinal.view;
 
+import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -30,6 +31,8 @@ public class FragmentRecyclerUsuario extends Fragment {
 
     private RecyclerView recyclerViewUsuario;
     private AdapterRecycleUsuarios unAdapterUsuarios;
+    private Double userLatitude;
+    private Double userLongitude;
 
     @Nullable
     @Override
@@ -43,16 +46,57 @@ public class FragmentRecyclerUsuario extends Fragment {
         unAdapterUsuarios = new AdapterRecycleUsuarios(getActivity(),usuariosDelAdapter,new ListenerUsuarios());
         recyclerViewUsuario.setAdapter(unAdapterUsuarios);
         //busca el usuario de firebase
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        final FirebaseUser user = mAuth.getCurrentUser();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        FirebaseAuth mAuth  = FirebaseAuth.getInstance();
-        FirebaseUser usuarioLogeado = mAuth.getCurrentUser();
+        database.getReference("users").child(user.getUid()).addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+
+                            userLatitude = dataSnapshot.child("latitudeCoordinate").getValue(Double.class);
+                            userLongitude = dataSnapshot.child("longitudeCoordinate").getValue(Double.class);
+                        }
+                    }
+
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
+                    }
+                });
         database.getReference("users").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot userDataSnapshot : dataSnapshot.getChildren()){
+
+
                     Usuario usuario = userDataSnapshot.getValue(Usuario.class);
-                    usuariosDelAdapter.add(usuario);
-                    unAdapterUsuarios.notifyDataSetChanged();
+                    try{
+                        Location locationFromFriend = new Location("");
+                        locationFromFriend.setLongitude(usuario.getLongitudeCoordinate());
+                        locationFromFriend.setLatitude(usuario.getLatitudeCoordinate());
+                        Location myLocation = new Location("");
+                        myLocation.setLongitude(userLongitude);
+                        myLocation.setLatitude(userLatitude);
+
+                        if(myLocation.distanceTo(locationFromFriend) < 500 && !(usuario.getId().equals(user.getUid()))){
+
+                            usuariosDelAdapter.add(usuario);
+                            unAdapterUsuarios.notifyDataSetChanged();
+
+                        }
+                    }
+                    catch (Exception e){
+
+                        e.getStackTrace();
+                    }
+
+
+
+
+
 
                 }
             }

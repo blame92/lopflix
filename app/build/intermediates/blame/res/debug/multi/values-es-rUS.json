@@ -748,8 +748,46 @@
                     "startLine": 41,
                     "startColumn": 4,
                     "startOffset": 5360,
+                    "endColumn": 105,
+                    "endOffset": 5461
+                },
+                "from": {
+                    "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/values-es-rUS/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 285,
+                        "endColumn": 105,
+                        "endOffset": 386
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 5466,
+                    "endColumn": 97,
+                    "endOffset": 5559
+                },
+                "from": {
+                    "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.4.0/res/values-es-rUS/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 391,
+                        "endColumn": 97,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 5564,
                     "endColumn": 81,
-                    "endOffset": 5437
+                    "endOffset": 5641
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-es-rUS/values-es-rUS.xml",
@@ -764,11 +802,11 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 5442,
+                    "startOffset": 5646,
                     "endColumn": 100,
-                    "endOffset": 5538
+                    "endOffset": 5742
                 },
                 "from": {
                     "file": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-es-rUS/values-es-rUS.xml",
