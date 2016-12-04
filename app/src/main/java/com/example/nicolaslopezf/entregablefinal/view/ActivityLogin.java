@@ -22,6 +22,7 @@ import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -86,6 +87,18 @@ public class ActivityLogin  extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
         setContentView(R.layout.activity_login);
+        mAuth  = FirebaseAuth.getInstance();
+
+        final PeliculaController peliculaController = new PeliculaController();
+        imageView1 = (ImageView) findViewById(R.id.activityLogin_imageView11);
+        imageView2 = (ImageView) findViewById(R.id.activityLogin_imageView12);
+        imageView3 = (ImageView) findViewById(R.id.activityLogin_imageView13);
+        imageView4 = (ImageView) findViewById(R.id.activityLogin_imageView21);
+        imageView5 = (ImageView) findViewById(R.id.activityLogin_imageView22);
+        imageView6 = (ImageView) findViewById(R.id.activityLogin_imageView23);
+        imageView7 = (ImageView) findViewById(R.id.activityLogin_imageView31);
+        imageView8 = (ImageView) findViewById(R.id.activityLogin_imageView32);
+        imageView9 = (ImageView) findViewById(R.id.activityLogin_imageView33);
 
        // FACEBOOK//
         FacebookSdk.sdkInitialize(getApplicationContext());
@@ -103,10 +116,9 @@ public class ActivityLogin  extends AppCompatActivity {
                 // App code
                 handleFacebookAccessToken(loginResult.getAccessToken());
                 Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
-
-                FirebaseUser user = mAuth.getCurrentUser();
-                logUserToFirebaseDatabase(user);
                 startActivity(intent);
+
+
 
             }
 
@@ -122,21 +134,6 @@ public class ActivityLogin  extends AppCompatActivity {
         });
 
         //FACEBOOK FIN //
-
-
-
-
-
-        final PeliculaController peliculaController = new PeliculaController();
-        imageView1 = (ImageView) findViewById(R.id.activityLogin_imageView11);
-        imageView2 = (ImageView) findViewById(R.id.activityLogin_imageView12);
-        imageView3 = (ImageView) findViewById(R.id.activityLogin_imageView13);
-        imageView4 = (ImageView) findViewById(R.id.activityLogin_imageView21);
-        imageView5 = (ImageView) findViewById(R.id.activityLogin_imageView22);
-        imageView6 = (ImageView) findViewById(R.id.activityLogin_imageView23);
-        imageView7 = (ImageView) findViewById(R.id.activityLogin_imageView31);
-        imageView8 = (ImageView) findViewById(R.id.activityLogin_imageView32);
-        imageView9 = (ImageView) findViewById(R.id.activityLogin_imageView33);
 
 
         peliculaController.obtenerListaDePeliculasTMDB(TMDBHelper.getPopularMovies(TMDBHelper.language_ENGLISH,1),this,
@@ -167,7 +164,7 @@ public class ActivityLogin  extends AppCompatActivity {
 
         });
         //--------------------------------LOGIN TWITTER------------------------------------
-        mAuth  = FirebaseAuth.getInstance();
+
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -175,6 +172,13 @@ public class ActivityLogin  extends AppCompatActivity {
                 if (user != null) {
                     // User is signed in
                     Log.d("twitter", "onAuthStateChanged:signed_in:" + user.getUid());
+                    try{
+                        logUserToFirebaseDatabase(user);
+                    }
+                    catch (Exception e){
+                        e.getStackTrace();
+                    }
+
                 } else {
                     // User is signed out
                     Log.d("twitter", "onAuthStateChanged:signed_out");
@@ -211,7 +215,6 @@ public class ActivityLogin  extends AppCompatActivity {
             }
         });
 
-
     }
 
 
@@ -237,6 +240,20 @@ public class ActivityLogin  extends AppCompatActivity {
                         // ...
                     }
                 });
+
+
+    }
+
+    public void checkIfConnectedWithFacebook(){
+
+        for (UserInfo user: FirebaseAuth.getInstance().getCurrentUser().getProviderData()) {
+            if (user.getProviderId().equals("facebook.com")) {
+
+                Toast.makeText(this, "Welcome " + user.getDisplayName(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+                startActivity(intent);
+            }
+        }
     }
 
     @Override
@@ -314,18 +331,22 @@ public class ActivityLogin  extends AppCompatActivity {
 
     }
 
+
     public void logUserToFirebaseDatabase(final FirebaseUser user){
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
         final String id = user.getUid();
+        Log.d("facebookuser1",id);
         database.getReference("users").child(id).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (!dataSnapshot.exists()) {
-                            Usuario usuario = new Usuario(user.getEmail(), user.getUid());
+
+                            Usuario usuario = new Usuario(user.getEmail(), id);
                             usuario.setFoto(user.getPhotoUrl().toString());
+                            Log.d("facebookuser2", usuario.getId());
                             usuario.setNombre(user.getDisplayName());
                             dataSnapshot.getRef().
                                     setValue(usuario);

@@ -1,11 +1,15 @@
 package com.example.nicolaslopezf.entregablefinal.view;
 
 import android.content.res.ColorStateList;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -14,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -78,12 +83,15 @@ public class FragmentPeliculaDetallada extends Fragment {
         final TextView textViewActores = (TextView) viewADevolverInflado.findViewById(R.id.textActoresPeliculaItem);
         final TextView textViewDescripcion = (TextView) viewADevolverInflado.findViewById(R.id.textDescripcionPeliculaItem);
         final CheckBox checkBoxRating = (CheckBox) viewADevolverInflado.findViewById(R.id.textScorePeliculaItem);
-        final FloatingActionButton flotingActionB = (FloatingActionButton) viewADevolverInflado.findViewById(R.id.buttonFav);
+        final com.github.clans.fab.FloatingActionButton flotingActionB = (com.github.clans.fab.FloatingActionButton) viewADevolverInflado.findViewById(R.id.buttonFav);
 
         final PeliculaController peliculaController = new PeliculaController();
 
 
         final String imdbID = bundleRecibido.getString("imdbID");
+
+
+
 
 
 
@@ -94,6 +102,23 @@ public class FragmentPeliculaDetallada extends Fragment {
             @Override
             public void finish(Object resultado) {
                 pelicula = (Pelicula) resultado;
+
+                peliculaController.checkIfMovieIsInFirebase(pelicula, getActivity(), new ResultListener<Boolean>() {
+                    @Override
+                    public void finish(Boolean esFavorita) {
+                        if(!esFavorita){
+                            flotingActionB.setColorNormal(Color.parseColor("#FFF8E1"));
+
+                        }
+                        else{
+                            flotingActionB.setColorNormal(Color.parseColor("#FF8F00"));
+
+
+                        }
+                    }
+                });
+
+
                 flotingActionB.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -105,14 +130,15 @@ public class FragmentPeliculaDetallada extends Fragment {
                                 if(!esFavorita){
                                     peliculaController.addMovieToFirebaseFavorites(pelicula,getActivity());
                                     Toast.makeText(getActivity(), pelicula.getTitle()+  " fue agregado a tu lista de favorito", Toast.LENGTH_SHORT).show();
-                                    flotingActionB.setImageResource(R.mipmap.ic_favorite_full);
-                                    flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
+                                    flotingActionB.setColorNormal(Color.parseColor("#FF8F00"));
+
                                 }
                                 else{
                                     peliculaController.removeMovieFromFirebaseFavorites(pelicula,getActivity());
                                     Toast.makeText(getActivity(), pelicula.getTitle()+  " fue removida de tu lista de favorito", Toast.LENGTH_SHORT).show();
-                                    flotingActionB.setImageResource(R.mipmap.ic_favorite);
-                                    flotingActionB.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.backgroundColor)));
+                                    flotingActionB.setColorNormal(Color.parseColor("#FFF8E1"));
+
+
                                 }
                             }
                         });
@@ -124,6 +150,7 @@ public class FragmentPeliculaDetallada extends Fragment {
                 textViewDescripcion.setText(pelicula.getPlot());
                 checkBoxRating.setText(pelicula.getImdbRating() + "/10");
                 Picasso.with(getContext()).load(pelicula.getPoster()).placeholder(R.mipmap.ic_launcher).into(imageViewFoto);
+
 
 //                ArrayList<Pelicula> peliculasDelRecycle = peliculasController.damePeliculasPorGenero(genero,getContext());
 //                peliculasDelRecycle.remove(pelicula);

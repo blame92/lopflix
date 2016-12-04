@@ -26,6 +26,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.squareup.picasso.Picasso;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.twitter.sdk.android.core.internal.TwitterApi;
 
 import java.util.zip.Inflater;
 
@@ -36,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
     private static final String TWITTER_KEY = "o0AwMxuktney6F0OxNZXhup35";
     private static final String TWITTER_SECRET = "bkItOFtZmpTPmBDWP3zEylH2iYeOUL1eLy6a3AVaV444eXra0w";
-
 
 
     DrawerLayout drawerLayout;
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
                 ContainerMovieDB containerMovieDB = (ContainerMovieDB) resultado;
             }
         });
+
 
 
         super.onCreate(savedInstanceState);

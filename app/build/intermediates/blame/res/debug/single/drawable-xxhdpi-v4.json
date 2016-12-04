@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_small_white.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/messenger_bubble_small_white.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png",
@@ -125,7 +125,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_large_white.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/messenger_bubble_large_white.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
@@ -265,7 +265,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/tw__share_email_header.png",
@@ -278,6 +278,10 @@
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
         "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/fab_add.png",
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/drawable-xxhdpi-v4/fab_add.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png",
@@ -313,7 +317,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
@@ -341,7 +345,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_icon_white.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png",
@@ -377,7 +381,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_small_blue.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/tw__ic_logo_blue.png",
@@ -421,7 +425,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/tw__ic_vine_badge.png",
@@ -449,7 +453,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_large_blue.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png",
@@ -465,7 +469,7 @@
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png",
-        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_ic_googleplayservices.png",
