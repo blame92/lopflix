@@ -4,6 +4,10 @@
     <string name="genero_comedia">Comedy</string>
     <string name="genero_accion">Action</string>
     <string name="genero_terror">Horror</string>
+    <string name="genero_scifi">Sci-Fi</string>
+    <string name="genero_family">Family</string>
+    <string name="genero_thriller">Thriller</string>
+    <string name="genero_docu">Documentary</string>
     <string name="genero_infantiles">Animation</string>
     <string name="trending_movies">Trending Movies</string>
     <string name="top_movies_2016">Top Rated Movies 2016</string>

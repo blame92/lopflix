@@ -11,6 +11,7 @@ import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -38,6 +39,9 @@ public class AdapterRecyclePeliculasSoloImagen extends RecyclerView.Adapter {
         return listaDePeliculas.get(position);
     }
 
+    public void agregarPeliculasAlRecycle(ArrayList<Pelicula> peliculasAgregadas){
+        listaDePeliculas.addAll(peliculasAgregadas);
+    }
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(unContexto);

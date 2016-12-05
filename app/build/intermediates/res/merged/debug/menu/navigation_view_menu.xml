@@ -20,6 +20,18 @@
         <item
             android:id="@+id/navigation_menu_infantiles"
             android:title="@string/genero_infantiles"/>
+        <item
+            android:id="@+id/navigation_menu_family"
+            android:title="@string/genero_family"/>
+        <item
+            android:id="@+id/navigation_menu_thriller"
+            android:title="@string/genero_thriller"/>
+        <item
+            android:id="@+id/navigation_menu_documentary"
+            android:title="@string/genero_docu"/>
+        <item
+            android:id="@+id/navigation_menu_scifi"
+            android:title="@string/genero_scifi"/>
 
     </group>
 

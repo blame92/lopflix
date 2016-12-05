@@ -177,7 +177,7 @@ public class UserSettingsActivity extends AppCompatActivity {
                                     dataSnapshot.child("nombre").getRef().setValue(usuario.getNombre());
                                     dataSnapshot.child("edad").getRef().setValue(usuario.getEdad());
                                     dataSnapshot.child("email").getRef().setValue(usuario.getEmail());
-                                    dataSnapshot.child("desc").getRef().setValue(usuario.getDescripcion());
+                                    dataSnapshot.child("descripcion").getRef().setValue(usuario.getDescripcion());
 
                                     FirebaseStorage storage = FirebaseStorage.getInstance();
                                     StorageReference storageRef = storage.getReferenceFromUrl("gs://lopflix-940b2.appspot.com");

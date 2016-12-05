@@ -172,14 +172,14 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
             else{
                 Toast.makeText(MainActivity.this, item.toString(), Toast.LENGTH_SHORT).show();
                 unFragmentManager = getSupportFragmentManager();
-                FragmentViewPager fragmentViewPager = new FragmentViewPager();
-                FragmentRecyclerSoloImagen fragmentRecyclerSoloImagen = new FragmentRecyclerSoloImagen();
+
+                FragmentPeliculasGenero fragmentPeliculasGeneron = new FragmentPeliculasGenero();
                 Bundle bundle = new Bundle();
                 bundle.putString("genero", item.toString());
-                fragmentRecyclerSoloImagen.setArguments(bundle);
+                fragmentPeliculasGeneron.setArguments(bundle);
 
                 FragmentTransaction unaTransaction = unFragmentManager.beginTransaction();
-                unaTransaction.replace(R.id.acaVaElFragmentPelicula, fragmentRecyclerSoloImagen).addToBackStack(null);
+                unaTransaction.replace(R.id.acaVaElFragmentPelicula, fragmentPeliculasGeneron).addToBackStack(null);
                 unaTransaction.commit();
             }
 
@@ -380,25 +380,25 @@ public class MainActivity extends AppCompatActivity implements FragmentRecyclerS
             FirebaseAuth mAuth = FirebaseAuth.getInstance();
             final FirebaseUser user = mAuth.getCurrentUser();
             FirebaseDatabase database = FirebaseDatabase.getInstance();
-            database.getReference("users").child(user.getUid()).addListenerForSingleValueEvent(
-                    new ValueEventListener() {
-                        @Override
-                        public void onDataChange(DataSnapshot dataSnapshot) {
-                            if (dataSnapshot.exists()) {
-                                dataSnapshot.child("latitudeCoordinate").getRef().setValue(mCurrentLocation.getLatitude());
-                                dataSnapshot.child("longitudeCoordinate").getRef().setValue(mCurrentLocation.getLongitude());
-
+            try{
+                database.getReference("users").child(user.getUid()).addListenerForSingleValueEvent(
+                        new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                if (dataSnapshot.exists()) {
+                                    dataSnapshot.child("latitudeCoordinate").getRef().setValue(mCurrentLocation.getLatitude());
+                                    dataSnapshot.child("longitudeCoordinate").getRef().setValue(mCurrentLocation.getLongitude());
+                                }
                             }
-                        }
-
-
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-                            Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
-                        }
-                    });
-
-
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+                                Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
+                            }
+                        });
+            }
+            catch (Exception e){
+                e.printStackTrace();
+            }
         }
     }
 

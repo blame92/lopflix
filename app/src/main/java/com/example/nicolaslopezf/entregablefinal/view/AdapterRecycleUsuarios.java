@@ -101,11 +101,8 @@ public class AdapterRecycleUsuarios  extends RecyclerView.Adapter{
 
         }
         public void bindReceta(final Usuario unUsuario){
-            // imagenUsuario.setBackgroundResource(R.drawable.lopo_icon_two);
-            // Picasso.with(unContexto).load(unUsuario.getFoto()).into(imagenUsuario);
+
             nombreUsuario.setText(unUsuario.getNombre());
-//            edadUsuario.setText(unUsuario.getAge() + " anios");
-//            generoFavUsuario.setText(unUsuario.getFavGenre());
 
 
             FirebaseStorage storage = FirebaseStorage.getInstance();

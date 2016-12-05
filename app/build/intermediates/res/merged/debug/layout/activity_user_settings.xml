@@ -18,7 +18,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
                     android:id="@+id/user_imageView_imagenUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="450dp"
@@ -26,7 +26,7 @@
                 <ImageView
                     android:visibility="gone"
 
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="450dp"
                     android:id="@+id/imageView"/>

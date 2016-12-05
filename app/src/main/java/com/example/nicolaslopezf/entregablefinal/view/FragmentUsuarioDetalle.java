@@ -1,6 +1,9 @@
 package com.example.nicolaslopezf.entregablefinal.view;
 
+import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -10,15 +13,23 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.nicolaslopezf.entregablefinal.R;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
+import com.example.nicolaslopezf.entregablefinal.model.Usuario.Usuario;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -27,6 +38,10 @@ import java.util.ArrayList;
  */
 
 public class FragmentUsuarioDetalle extends Fragment {
+
+    private Double userLatitude;
+    private Double userLongitude;
+
 
     private RecyclerView recyclerViewUsuarios;
     private AdapterRecyclePeliculasFavoritos unAdapterFavoritasUsuario;
@@ -44,6 +59,12 @@ public class FragmentUsuarioDetalle extends Fragment {
         unAdapterFavoritasUsuario = new AdapterRecyclePeliculasFavoritos(getActivity());
         unAdapterFavoritasUsuario.setListener(new ListenerPeliculasSoloImagen(recyclerViewUsuarios,unAdapterFavoritasUsuario));
         final ArrayList<Pelicula> peliculas = new ArrayList<>();
+
+        final ImageView imagenUsuario = (ImageView) viewADevolverInflado.findViewById(R.id.userdetalle_imageView_imagenUsuario);
+        final TextView nombreedadUsuario = (TextView) viewADevolverInflado.findViewById(R.id.userdetalle_nombreyEdad);
+        final TextView descUsuario = (TextView) viewADevolverInflado.findViewById(R.id.userdetalle_descripcion);
+        final TextView distanciaUsuario = (TextView) viewADevolverInflado.findViewById(R.id.userdetalle_distancia);
+
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
@@ -68,8 +89,75 @@ public class FragmentUsuarioDetalle extends Fragment {
                     }
                 });
 
+        database.getReference("users").child(idUsuarioSeleccionado).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                final Usuario usuarioSeleccionado = dataSnapshot.getValue(Usuario.class);
+                nombreedadUsuario.setText(usuarioSeleccionado.getNombre() + ", " + usuarioSeleccionado.getEdad());
+                descUsuario.setText(usuarioSeleccionado.getDescripcion());
+                final Location userLastLocation = new Location("");
+                userLastLocation.setLongitude(usuarioSeleccionado.getLongitudeCoordinate());
+                userLastLocation.setLatitude(usuarioSeleccionado.getLatitudeCoordinate());
+                FirebaseStorage storage = FirebaseStorage.getInstance();
+                StorageReference storageRef = storage.getReferenceFromUrl("gs://lopflix-940b2.appspot.com");
+
+                storageRef.child(usuarioSeleccionado.getId() + "_profilePic.jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        Picasso.with(getActivity()).load(uri.toString()).into(imagenUsuario);
+                        // Got the download URL for 'users/me/profile.png'
+                        // Pass it to Picasso to download, show in ImageView and caching
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        Picasso.with(getActivity()).load(usuarioSeleccionado.getFoto()).into(imagenUsuario);
+
+                        // Handle any errors
+                    }
+                });
+
+                //busca el usuario de firebase
+                FirebaseAuth mAuth = FirebaseAuth.getInstance();
+                final FirebaseUser user = mAuth.getCurrentUser();
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                database.getReference("users").child(user.getUid()).addListenerForSingleValueEvent(
+                        new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                if (dataSnapshot.exists()) {
+
+                                    userLatitude = dataSnapshot.child("latitudeCoordinate").getValue(Double.class);
+                                    userLongitude = dataSnapshot.child("longitudeCoordinate").getValue(Double.class);
+                                    Location myLocation = new Location("");
+                                    myLocation.setLongitude(userLongitude);
+                                    myLocation.setLatitude(userLatitude);
+                                    float distanciaEntreUsuarios = myLocation.distanceTo(userLastLocation);
+                                    distanciaUsuario.setText("ultimo Login a: " + distanciaEntreUsuarios + " metros");
+
+                                }
+                            }
+
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+                                Log.w("TodoApp", "getUser:onCancelled", databaseError.toException());
+                            }
+                        });
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
         unAdapterFavoritasUsuario.setListaDePeliculas(peliculas);
         recyclerViewUsuarios.setAdapter(unAdapterFavoritasUsuario);
+
+
 
 
         return viewADevolverInflado;

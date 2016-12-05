@@ -93,11 +93,6 @@ public class FragmentRecyclerUsuario extends Fragment {
                         e.getStackTrace();
                     }
 
-
-
-
-
-
                 }
             }
 

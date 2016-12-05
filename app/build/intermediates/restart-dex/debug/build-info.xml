@@ -5,32 +5,32 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="23679589921736"
-    token="494775607350069868"
+    timestamp="949786649883101"
+    token="-638476082329685359"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="2645" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="2768" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1776" />
 
     <artifact
-        location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/outputs/apk/app-debug.apk"
+        location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="23679589921736"
+        timestamp="949786649883101"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/santiagoiraola/Desktop/FINAL_DIGITALHOUSE/FINAL PRE RECRUITING/loflixOficial/app/build/outputs/apk/app-debug.apk"
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 
