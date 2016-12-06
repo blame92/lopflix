@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -43,4 +47,13 @@
 
     </android.support.v7.widget.RecyclerView>
 
+    <Button
+        android:text="like"
+        android:id="@+id/userdetalle_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
 </LinearLayout>
+</ScrollView>

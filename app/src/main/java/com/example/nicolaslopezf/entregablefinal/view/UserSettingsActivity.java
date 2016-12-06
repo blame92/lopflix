@@ -131,29 +131,36 @@ public class UserSettingsActivity extends AppCompatActivity {
 
 
                 // Get the data from an ImageView as bytes
-                ImageView imageView = (ImageView) findViewById(R.id.imageView);
-                imageView.setDrawingCacheEnabled(true);
-                imageView.buildDrawingCache();
-                Bitmap bitmap = Bitmap.createBitmap(imageView.getDrawingCache());
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-                byte[] data = baos.toByteArray();
 
-                UploadTask uploadTask = imagesRef.putBytes(data);
+                try {
+                    ImageView imageView = (ImageView) findViewById(R.id.imageView);
+                    imageView.setDrawingCacheEnabled(true);
+                    imageView.buildDrawingCache();
+                    Bitmap bitmap = Bitmap.createBitmap(imageView.getDrawingCache());
+                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                    byte[] data = baos.toByteArray();
+
+                    UploadTask uploadTask = imagesRef.putBytes(data);
 
 
-                uploadTask.addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception exception) {
-                        // Handle unsuccessful uploads
-                        Toast.makeText(UserSettingsActivity.this, "Error", Toast.LENGTH_SHORT).show();
-                    }
-                }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        Toast.makeText(UserSettingsActivity.this, "Image has been saved.", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                    uploadTask.addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception exception) {
+                            // Handle unsuccessful uploads
+                            Toast.makeText(UserSettingsActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                        }
+                    }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            Toast.makeText(UserSettingsActivity.this, "Image has been saved.", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+
 
 //                final FirebaseDatabase database = FirebaseDatabase.getInstance();
 //                final String id = usuarioLogeado.getUid();

@@ -49,11 +49,11 @@ public final class R {
 	public static final class id {
 		public static final int height = 0x7f0f0023;
 		public static final int imageView = 0x7f0f0099;
-		public static final int tw__allow_btn = 0x7f0f0103;
-		public static final int tw__not_now_btn = 0x7f0f0102;
-		public static final int tw__share_email_desc = 0x7f0f0101;
-		public static final int tw__spinner = 0x7f0f0100;
-		public static final int tw__web_view = 0x7f0f00ff;
+		public static final int tw__allow_btn = 0x7f0f0102;
+		public static final int tw__not_now_btn = 0x7f0f0101;
+		public static final int tw__share_email_desc = 0x7f0f0100;
+		public static final int tw__spinner = 0x7f0f00ff;
+		public static final int tw__web_view = 0x7f0f00fe;
 		public static final int width = 0x7f0f0024;
 	}
 	public static final class layout {

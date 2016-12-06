@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -64,9 +65,9 @@ public class FragmentUsuarioDetalle extends Fragment {
         final TextView nombreedadUsuario = (TextView) viewADevolverInflado.findViewById(R.id.userdetalle_nombreyEdad);
         final TextView descUsuario = (TextView) viewADevolverInflado.findViewById(R.id.userdetalle_descripcion);
         final TextView distanciaUsuario = (TextView) viewADevolverInflado.findViewById(R.id.userdetalle_distancia);
+        final Button likeUser = (Button) viewADevolverInflado.findViewById((R.id.userdetalle_like));
 
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
         database.getReference("users").child(idUsuarioSeleccionado).child("watchlist").addListenerForSingleValueEvent(
                 new ValueEventListener() {
@@ -91,7 +92,11 @@ public class FragmentUsuarioDetalle extends Fragment {
 
         database.getReference("users").child(idUsuarioSeleccionado).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(final DataSnapshot dataSnapshot) {
+                FirebaseAuth mAuth  = FirebaseAuth.getInstance();
+
+                final FirebaseUser user = mAuth.getCurrentUser();
+
                 final Usuario usuarioSeleccionado = dataSnapshot.getValue(Usuario.class);
                 nombreedadUsuario.setText(usuarioSeleccionado.getNombre() + ", " + usuarioSeleccionado.getEdad());
                 descUsuario.setText(usuarioSeleccionado.getDescripcion());
@@ -100,6 +105,28 @@ public class FragmentUsuarioDetalle extends Fragment {
                 userLastLocation.setLatitude(usuarioSeleccionado.getLatitudeCoordinate());
                 FirebaseStorage storage = FirebaseStorage.getInstance();
                 StorageReference storageRef = storage.getReferenceFromUrl("gs://lopflix-940b2.appspot.com");
+                likeUser.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dataSnapshot.child("likes").child(user.getUid()).getRef().addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                if (!dataSnapshot.exists() || dataSnapshot.getValue(String.class).equals("missclick")){
+                                    dataSnapshot.getRef().setValue(user.getUid());
+                                }
+                                else {
+                                    dataSnapshot.getRef().setValue("missclick");
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
+                    }
+                });
+
 
                 storageRef.child(usuarioSeleccionado.getId() + "_profilePic.jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
@@ -119,8 +146,7 @@ public class FragmentUsuarioDetalle extends Fragment {
                 });
 
                 //busca el usuario de firebase
-                FirebaseAuth mAuth = FirebaseAuth.getInstance();
-                final FirebaseUser user = mAuth.getCurrentUser();
+//                final FirebaseUser user = mAuth.getCurrentUser();
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 database.getReference("users").child(user.getUid()).addListenerForSingleValueEvent(
                         new ValueEventListener() {

@@ -68,12 +68,12 @@
         "source": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_replay.png",
         "source": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\2.2.0\\res\\drawable-hdpi-v4\\tw__ic_video_replay.png"
+    },
+    {
+        "merged": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Nicolas Lopez F\\Desktop\\loflixOficial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png",

@@ -27,9 +27,10 @@ public class AdapterViewPager extends FragmentStatePagerAdapter {
         ArrayList<Fragment> fragments = new ArrayList<>();
         FragmentRecyclerSoloImagen fragmentRecyclerSoloImagen = new FragmentRecyclerSoloImagen();
         fragments.add(new FragmentRecyclerSoloImagen());
-        fragments.add(new FragmentRecycleSeries());
+//        fragments.add(new FragmentRecycleSeries());
         fragments.add(new FragmentRecycleGridFavoritas());
         fragments.add(new FragmentRecyclerUsuario());
+        fragments.add(new FragmentRecyclerUsuariosConection());
 
         this.fragmentsDelAdapter = fragments;
     }
@@ -54,13 +55,13 @@ public class AdapterViewPager extends FragmentStatePagerAdapter {
                 tabTitle = "Peliculas";
                 break;
             case 1:
-                tabTitle = "Series";
-                break;
-            case 2:
                 tabTitle = "Favoritos";
                 break;
+            case 2:
+                tabTitle = "Cerca Tuyo";
+                break;
             case 3:
-                tabTitle = "Amigos";
+                tabTitle = "(L)";
         }
         return tabTitle;
     }

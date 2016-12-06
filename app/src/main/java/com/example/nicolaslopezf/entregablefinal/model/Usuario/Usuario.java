@@ -3,6 +3,7 @@ package com.example.nicolaslopezf.entregablefinal.model.Usuario;
 import com.example.nicolaslopezf.entregablefinal.model.PeliculaIMDB.Pelicula;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Nicolas Lopez F on 11/1/2016.
@@ -18,6 +19,8 @@ public class Usuario {
     private String descripcion;
     private Double longitudeCoordinate;
     private Double latitudeCoordinate;
+
+//    private List<Like> likes;
 
 //    private ArrayList<String> amigos;
 //    private ArrayList<String> watchlist;
@@ -107,6 +110,14 @@ public class Usuario {
 
         return longitudeCoordinate;
     }
+
+//    public List<Like> getLikes() {
+//        return likes;
+//    }
+//
+//    public void setLikes(List<Like> likes) {
+//        this.likes = likes;
+//    }
 
     public Double getLatitudeCoordinate() {
         return latitudeCoordinate;

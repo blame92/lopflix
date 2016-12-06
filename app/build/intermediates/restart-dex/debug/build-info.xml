@@ -5,33 +5,74 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="949786649883101"
+    timestamp="1037563748556639"
     token="-638476082329685359"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2645" />
+        duration="700" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="16" />
     <task
         name="instant-run-transform"
-        duration="2768" />
+        duration="174" />
     <task
         name="verifier"
-        duration="1776" />
+        duration="26" />
 
     <artifact
-        location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="949786649883101"
+        timestamp="1037365833020970"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="1037504746875254"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="1037563748556639"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Nicolas Lopez F\Desktop\loflixOficial\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

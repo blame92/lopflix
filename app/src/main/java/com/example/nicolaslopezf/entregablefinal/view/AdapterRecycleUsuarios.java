@@ -88,15 +88,13 @@ public class AdapterRecycleUsuarios  extends RecyclerView.Adapter{
     private class UsuarioViewHolder extends RecyclerView.ViewHolder{
         private ImageView imagenUsuario;
         private TextView nombreUsuario;
-        private TextView edadUsuario;
-        private TextView generoFavUsuario;
+
 
         public UsuarioViewHolder(View itemView){
             super(itemView);
             imagenUsuario = (ImageView)itemView.findViewById(R.id.ivPelicula);
             nombreUsuario = (TextView)itemView.findViewById(R.id.tvNombrePelicula);
-            edadUsuario = (TextView) itemView.findViewById(R.id.tvDateOfRelease);
-            generoFavUsuario = (TextView) itemView.findViewById(R.id.tvDirector);
+
 
 
         }

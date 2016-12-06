@@ -4,6 +4,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -40,8 +41,7 @@ public class FragmentRecyclerUsuario extends Fragment {
 
         View unaVistaADevolver = inflater.inflate(R.layout.fragment_recycle_solo, container, false);
         recyclerViewUsuario= (RecyclerView)unaVistaADevolver.findViewById(R.id.RecyclerView);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
-        recyclerViewUsuario.setLayoutManager(linearLayoutManager);
+        LinearLayoutManager linearLayoutManager = new GridLayoutManager(getActivity(), 2);        recyclerViewUsuario.setLayoutManager(linearLayoutManager);
         final ArrayList<Usuario> usuariosDelAdapter = new ArrayList<>();
         unAdapterUsuarios = new AdapterRecycleUsuarios(getActivity(),usuariosDelAdapter,new ListenerUsuarios());
         recyclerViewUsuario.setAdapter(unAdapterUsuarios);
